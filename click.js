@@ -104,3 +104,8 @@ function toPage(frompage, topage) {
     }
 
 }
+
+function playVideo(name) {
+    const file = "vid-" + name + ".html";
+    window.location.href = file;
+}
