@@ -16,7 +16,7 @@ const playlist = [{
 {
     name: 'daytime',
     times: [11, 12, 13, 14, 15, 16, 17, 18],
-    songs: ["https://node-01.zeno.fm/bwens44bf2zuv?rj-ttl=5&rj-tok=AAABctPalBQAZFB71eI9Tm_EZw"]
+    songs: ["https://stream.zenolive.com/2993k44bf2zuv.aac"]
 },
 {
     name: 'nightclub',
