@@ -405,12 +405,12 @@ li .tele {
 
 #planner li {
     font-family: 'ZurichTV';
-    width: 134%;
+    width: 150%;
 }
 
 #planner li .prgm {
     font-family: inherit;
-    width: 220px;
+    width: 270px;
 }    
 
 #planner li .rating {
@@ -436,7 +436,7 @@ li .tele {
     width: 40px;
     height: 100%;
     text-align: center;
-    color: var(-listnum-colour-hover);
+    color: var(--listnum-colour-hover);
     font-family: inherit;
 }
 
