@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    font-family: 'Zurich';
+}
+
+:root {
+    font-size: 16px;
+    --font-colour: white;
+    --main-colour: rgb(0, 37, 201);
+    --sub-colour: rgb(0, 26, 143);
+    --listnum-colour: rgb(126, 126, 255);
+    --main-colour-hover: #FCDA25;
+    --sub-colour-hover: #fec200;
+    --listnum-colour-hover: rgb(0, 0, 179);
+    --font-colour-hover: rgb(0, 0, 179);
+    --background-image-blank: url('https://media.discordapp.net/attachments/649968233553723405/709086018942402631/image1.jpg');
+    --background-image: url("img/tv_guide.png");
+}
+
+/* Backgrounds for pages */
+.bground1 {
+    background-image: url("img/tv_guide.png");
+}
+
+.bground2 {
+    background-image: url('https://media.discordapp.net/attachments/649968233553723405/709086018942402631/image1.jpg');
+}
+
+.boxoffice {
+    background-image: url('img/box_office.png');
+}
+
+.services {
+    background-image: url('img/services.png');
+}
+
+.interactive {
+    background-image: url('img/interactive.png')
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #111;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+main {
+    background: var(--background-image);
+    background-position: top;
+    background-size: 100%;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.menulisting[id] {
+    display: none;
+}
+
+.menulisting#main {
+    display: flex;
+}
+
+.menulisting#fyi {
+    width: 87%;
+}
+
+.menulisting {
+    width: 65%;
+    height: 410px;
+    margin-top: auto;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+    position: relative;
+}
+
+button {
+    background: transparent;
+    border: none !important;
+    font-size: 20;
+    position: absolute;
+    top: -13%;
+    left: 30%;
+    text-align: right;
+}
+
+    .menulisting li {
+        width: 100%;
+        height: 31.5px;
+        margin: 2px 0px;
+        background: var(--main-colour);
+        list-style-type: none;
+        color: var(--font-colour);
+        display: inline-flex;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+
+        .menulisting li:nth-of-type(1) {
+            margin-top: 0px;
+        }
+    .menulisting a {
+        color: var(--font-colour);
+    }
+
+li .num {
+    background: var(--sub-colour);
+    width: 80px;
+    height: 100%;
+    margin: 0px 10px 0px 5px;
+    color: var(--listnum-colour);
+    text-align: center;
+}
+
+li .tele {
+    background: var(--sub-colour);
+    width: 300px;
+    height: 100%;
+    margin: 0px 0px 0px auto;
+    position: page;
+    color: var(--listnum-colour);
+    text-align: right;
+    align-items: end;
+    justify-content: right;
+    align-self: end;
+}
+
+.menulisting .telelisting {
+    width: 150%;
+    height: 31.5px;
+    margin: 2px 0px;
+    background: var(--main-colour);
+    list-style-type: none;
+    color: var(--font-colour);
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+.menulisting li:hover {
+    background: var(--main-colour-hover);
+    color: var(--font-colour-hover);
+}
+
+    .menulisting li:hover .num {
+        background: var(--sub-colour-hover);
+        color: var(--listnum-colour-hover);
+    }
+
+    .menulisting li:hover .tele {
+        background: var(--sub-colour-hover);
+        color: var(--listnum-colour-hover);
+    }
+
+    .menulisting li:hover a {
+        color: var(--font-colour-hover);
+    }
+
+.menulisting li:focus {
+    background: var(--main-colour-hover);
+    color: var(--font-colour-hover);
+}
+
+    .menulisting li:focus .num {
+        background: var(--sub-colour-hover);
+        color: var(--listnum-colour-hover);
+    }
+
+    .menulisting li:focus .tele {
+        background: var(--sub-colour-hover);
+        color: var(--listnum-colour-hover);
+    }
+
+    .menulisting li:focus a {
+        color: var(--font-colour-hover);
+    }
+
+.links {
+    position: absolute;
+    bottom: -4%;
+    width: 100%;
+    font-size: 1rem;
+    text-align: right;
+    color: var(--main-colour);
+    display: inline;
+    overflow: hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.links a:hover {
+    color: var(--font-colour-hover)
+}
+
+.back {
+    position: absolute;
+    bottom: -9%;
+    width: 100%;
+    font-size: 1rem;
+    text-align: left;
+    color: var(--font-colour-hover);
+    display: inline;
+    overflow: hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
+}
+
+.back a {
+    color: var(--font-colour-hover);
+}
+
+.guidelisting {
+    width: 140%;
+    height: 410px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: inline-flex;
+    flex-direction: row;
+    user-select: none;
+    position: relative;
+    align-items: stretch;
+    align-content: safe center;
+}
+
+    .guidelisting li {
+        font-family: 'ZurichTV';
+        margin: 4px;
+        margin-top: 0px !important;
+        align-self: auto;
+        align-items: stretch;
+        align-content: safe center;
+    }
+
+.detailslisting {
+    width: 150%;
+    height: 410px;
+    margin-top: 0px!important;
+    margin-bottom: auto;
+    display: inline-flex;
+    flex-direction: row;
+    user-select: none;
+    position: center;
+    align-items: stretch;
+    align-content: safe center;
+}
+
+    .detailslisting li {
+        width: 130%;
+        margin: 10px;
+        margin-top: 0px !important;
+        align-self: auto;
+        align-items: stretch;
+        align-content: safe center;
+        text-align: center;
+    }
+
+        .detailslisting li:hover {
+            background: var( --main-colour);
+            color: var(--font-colour);
+        }
+
+.time {
+    position: absolute;
+    top: -23%;
+    left: 5%;
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: left;
+    color: var(--main-colour);
+}
+
+.titles {
+    position: absolute;
+    top: -15%;
+    left: 5%;
+    width: 100%;
+    font-size: 2rem;
+    text-align: left;
+    color: var(--main-colour);
+}
+
+/* FYI Box */
+
+.fyi {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .fyi header {
+        width: 100%;
+        height: 31.5px;
+        background: var(--main-colour-hover);
+        list-style-type: none;
+        color: var(--font-colour-hover);
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .fyi main {
+        min-height: 150px;
+        height: auto;
+        background: var(--main-colour);
+        color: var(--font-colour);
+        font-size: 1.6rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/*Search and Scan Bar*/
+.sas {
+    width: 150%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+    .sas header {
+        width: 100%;
+        height: 31.5px;
+        background-color: white;
+        list-style-type: none;
+        color: var(--font-colour-hover);
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .sas footer {
+        width: 100%;
+        height: 31.5px;
+        background-color: white;
+        list-style-type: none;
+        color: var(--font-colour-hover);
+        text-align: right;
+        font-size: 1.6rem;
+    }
+
+    .sas main {
+        min-height: 150px;
+        height: auto;
+        background: var(--main-colour);
+        color: var(--font-colour);
+        font-size: 1.6rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* Large Text Box */
+
+.ltb {
+    width: 150%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .ltb header {
+        width: 100%;
+        height: 31.5px;
+        background: var(--main-colour-hover);
+        list-style-type: none;
+        color: var(--font-colour-hover);
+        text-align: left;
+        font-size: 1.6rem;
+    }
+
+    .ltb main {
+        min-height: 150px;
+        height: auto;
+        background: var(--main-colour);
+        color: var(--font-colour);
+        font-size: 1.6rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/* Font Families */
+@font-face {
+    font-family: 'Zurich';
+    src: url('Zurich Bold Extended.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ZurichTV';
+    src: url('Zurich Bold Condensed.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica 65 Medium Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica 65 Medium Regular'), url('Helvetica65Medium_22443.woff') format('woff');
+}

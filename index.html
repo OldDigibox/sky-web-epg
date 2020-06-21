@@ -1,0 +1,1677 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Sky Web EPG by OldDigibox">
+    <meta name="description" content="A recreation of the classic EPG on the Sky Digiboxes and Sky+ boxes.">
+    <title>Sky Guide</title>
+    <script src="click.js"></script>
+</head>
+<body>
+    <main>
+        <iframe allow="autoplay" style="display:none" id="player" type="audio/mpeg">
+        </iframe>
+        <!--Landing Page-->
+        <section class="menulisting" id="main">
+            <li onclick="toPage('main', 'guide')">
+                <div class="num">1</div>
+                ALL CHANNELS
+            </li>
+            <li onclick="toPage('main', 'entertainment')">
+                <div class="num">2</div>
+                ENTERTAINMENT
+            </li>
+            <li>
+                <div class="num">3</div>
+                LIFESTYLE & CULTURE
+            </li>
+            <li onclick="toPage('main', 'movies')">
+                <div class="num">4</div>
+                MOVIES
+            </li>
+            <li>
+                <div class="num">5</div>
+                SPORTS
+            </li>
+            <li>
+                <div class="num">6</div>
+                NEWS
+            </li>
+            <li>
+                <div class="num">7</div>
+                DOCUMENTARIES
+            </li>
+            <li onclick="toPage('main', 'kids')">
+                <div class="num">8</div>
+                KIDS
+            </li>
+            <li>
+                <div class="num">9</div>
+                MUSIC
+            </li>
+            <li onclick="toPage('main', 'more')">
+                <div class="num">0</div>
+                MORE...
+            </li>
+            <div class="links">
+                <a onclick="toPage('main', 'boxoffice')">Go Right</a>
+                <a>Anytime TV</a>
+                <a>Planner</a>
+                <a onclick="toPage('main', 'az')">A—Z</a>
+                <a>Favourites</a>
+            </div>
+        </section>
+        <!--More Page-->
+        <section class="menulisting" id="more">
+            <li onclick="toPage('more', 'radio')">
+                <div class="num">1</div>
+                RADIO
+            </li>
+            <li>
+                <div class="num">2</div>
+                SHOPPING
+            </li>
+            <li>
+                <div class="num">3</div>
+                RELIGION
+            </li>
+            <li>
+                <div class="num">4</div>
+                INTERNATIONAL
+            </li>
+            <li>
+                <div class="num">5</div>
+                GAMING & DATING
+            </li>
+            <li>
+                <div class="num">6</div>
+                SPECIALIST
+            </li>
+            <li onclick="toPage('more', 'adult')">
+                <div class="num">7</div>
+                ADULT
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('more', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a>Anytime TV</a>
+                <a>Planner</a>
+                <a onclick="toPage('main', 'az')">A—Z</a>
+                <a>Favourites</a>
+            </div>
+        </section>
+        <!--Channel Guide -> All Channels-->
+        <section class="menulisting" id="guide">
+            <div class="time" id="datetime"></div>
+            <div class="titles">ALL CHANNELS</div>
+            <div class="guidelisting" onclick="window.location.href = 'https://www.bbc.co.uk/bbcone'">
+                <li>
+                    101   BBC One
+                </li>
+                <li>
+                    View on BBC iPlayer
+                </li>
+            </div>
+            <div class="guidelisting" onclick="window.location.href = 'https://bbc.co.uk/bbctwo'">
+                <li>
+                    102   BBC Two
+                </li>
+                <li>
+                    View on BBC iPlayer
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    103   ITV
+                </li>
+                <li>
+                    View on ITV Hub
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    104   Channel 4
+                </li>
+                <li>
+                    View on All4
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    105   Channel 5
+                </li>
+                <li>
+                    View on My5
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    106   Sky One
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    107   Sky Witness
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    108   Sky Atlantic
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    109   W
+                </li>
+                <li>
+                    View on UKTV Play
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    110   GOLD
+                </li>
+                <li>
+                    View on UKTV Play
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('guide', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <!--Channel Guide -> Entertainment-->
+        <section class="menulisting" id="entertainment">
+            <div class="time" id="datetime"></div>
+            <div class="titles">ENTERTAINMENT</div>
+            <div class="guidelisting" onclick="window.location.href = 'https://www.bbc.co.uk/bbcone'">
+                <li>
+                    101   BBC One
+                </li>
+                <li>
+                    View on BBC iPlayer
+                </li>
+            </div>
+            <div class="guidelisting" onclick="window.location.href = 'https://bbc.co.uk/bbctwo'">
+                <li>
+                    102   BBC Two
+                </li>
+                <li>
+                    View on BBC iPlayer
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    103   ITV
+                </li>
+                <li>
+                    View on ITV Hub
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    104   Channel 4
+                </li>
+                <li>
+                    View on All4
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    105   Channel 5
+                </li>
+                <li>
+                    View on My5
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    106   Sky One
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    107   Sky Witness
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    108   Sky Atlantic
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    109   W
+                </li>
+                <li>
+                    View on UKTV Play
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    110   GOLD
+                </li>
+                <li>
+                    View on UKTV Play
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('entertainment', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('entertainment', 'ent2')">Page Down</a>
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <section class="menulisting" id="ent2">
+            <div class="time" id="datetime"></div>
+            <div class="titles">ENTERTAINMENT</div>
+            <div class="guidelisting">
+                <li>
+                    111   Dave
+                </li>
+                <li>
+                    View on UKTV Play
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    112   Comedy Central
+                </li>
+                <li>
+                    View on CC.com
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    113   Sky Comedy
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    114   SyFy
+                </li>
+                <li>
+                    View on SyFy.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    115   BBC One HD
+                </li>
+                <li style="font-size: 14px">
+                    To receive HD please call 08442 415161
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    116   BBC Four
+                </li>
+                <li>
+                    View on BBC iPlayer
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    117   London Live
+                </li>
+                <li>
+                    View on LondonLive.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    118   ITV 2
+                </li>
+                <li>
+                    View on ITV Hub
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    119   ITV 3
+                </li>
+                <li>
+                    View on ITV Hub
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    120   ITV 4
+                </li>
+                <li>
+                    View on ITV Hub
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('ent2', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('ent2', 'entertainment')">Page Up</a>
+                <a onclick="toPage('ent2', 'ent3')">Page Down</a>
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <section class="menulisting" id="ent3">
+            <div class="time" id="datetime"></div>
+            <div class="titles">ENTERTAINMENT</div>
+            <div class="guidelisting">
+                <li>
+                    122   Sky Arts
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    123   E
+                </li>
+                <li>
+                    View on Eonline.com
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    124   FOX
+                </li>
+                <li>
+                    View on FoxTV.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    126   MTV
+                </li>
+                <li>
+                    View on MTV.com
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    127   ComedyCentXtra
+                </li>
+                <li>
+                    View on CC.com
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    128   5Star
+                </li>
+                <li>
+                    View on My5
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    131   ITVBe
+                </li>
+                <li>
+                    View on ITV Hub
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    132   alibi
+                </li>
+                <li>
+                    View on UKTV Play
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    133   TLC
+                </li>
+                <li>
+                    View on uk.TLC.com
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    134   S4C
+                </li>
+                <li>
+                    View on S4C.cymru
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('ent3', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('ent3', 'ent2')">Page Up</a>
+                <a>Page Down</a>
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <!--Channel Guide -> Movies-->
+        <section class="menulisting" id="movies">
+            <div class="time" id="datetime"></div>
+            <div class="titles">MOVIES</div>
+            <div class="guidelisting">
+                <li>
+                    301   Sky Premiere
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    302   Sky Fast and Furious
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    303   Sky Hits
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    304   Sky Premiere
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    305   Sky Disney
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    306   Sky Family
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    307   Sky Action
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    308   Sky Cinema Comedy
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    309   Sky Thriller
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    310   Sky Drama
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('movies', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('movies', 'mov2')">Page Down</a>
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <section class="menulisting" id="mov2">
+            <div class="time" id="datetime"></div>
+            <div class="titles">MOVIES</div>
+            <div class="guidelisting">
+                <li>
+                    311   Sky SciHorror
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    312   Sky Premiere+1
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    313   Film4
+                </li>
+                <li>
+                    View on All4
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    314   Film4 +1
+                </li>
+                <li>
+                    View on All4
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    315   TCM
+                </li>
+                <li>
+                    View on TCMuk.tv
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    316   TCM +1
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    317   Horror Channel
+                </li>
+                <li>
+                    HorrorChannel.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    318   HorrorChnl+1
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    319   Sony Movies Classic
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    320   Sony Movies Classic +1
+                </li>
+                <li>
+                    View on Sky Go
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('mov2', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('mov2', 'movies')">Page Up</a>
+                <a onclick="toPage('mov2', 'mov3')">Page Down</a>
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <!--Channel Guide -> Kids-->
+        <section class="menulisting" id="kids">
+            <div class="time" id="datetime"></div>
+            <div class="titles">KIDS</div>
+            <div class="guidelisting">
+                <li>
+                    601   CartoonNwk
+                </li>
+                <li>
+                    CartoonNetwork.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    602   CartoonNwk+1
+                </li>
+                <li>
+                    CartoonNetwork.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    603   Boomerang
+                </li>
+                <li>
+                    Boomerangtv.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    604   Nickelodeon
+                </li>
+                <li>
+                    View on Nick.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    605   Nick +1
+                </li>
+                <li>
+                    View on Nick.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    606   NickToons
+                </li>
+                <li>
+                    View on Nick.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    607   Disney Junior
+                </li>
+                <li>
+                    DisneyJunior.Disney.com
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    608   Disney Junior +1
+                </li>
+                <li>
+                    DisneyJunior.Disney.com
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    609   Disney Channel
+                </li>
+                <li>
+                    View on TV.Disney.co.uk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    610   Disney Chnl+1
+                </li>
+                <li>
+                    View on TV.Disney.co.uk
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('kids', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a>Page Down</a>
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <section class="menulisting" id="radio">
+            <div class="time" id="datetime"></div>
+            <div class="titles">RADIO</div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0101   BBC R1
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0102   BBC R2
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0103   BBC R3
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0104   BBC R4 FM
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0105   BBC R5L
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0106   Classic FM
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0107   Absolute
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0108   talkSPORT
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0109   Capital
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0110   Planet Rock
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('radio', 'more')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('radio', 'radio2')">Page Down</a>
+            </div>
+        </section>
+        <section class="menulisting" id="radio2">
+            <div class="time" id="datetime"></div>
+            <div class="titles">RADIO</div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0111   Heart
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0112   Heart '80s
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0113   Radio X
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0114   CapitalXTRA
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0115   BBC WS
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0116   BBC R Scot.
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0117   BBC R Wales
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0118   BBC R Ulster
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0119   BBC Asian
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0120   BBC 6 Music
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('radio2', 'more')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('radio2', 'radio')">Page Up</a>
+                <a onclick="toPage('radio2', 'radio3')">Page Down</a>
+            </div>
+        </section>
+        <section class="menulisting" id="radio3">
+            <div class="time" id="datetime"></div>
+            <div class="titles">RADIO</div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0121   Gold
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0122   WRN Europe
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0124   LBC
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0128   Smooth
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0130   PunjabRadio
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0131   BBC R4 Ex.
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0137   BBC R1X
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0138   TWR
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0139   BBC R n Gael
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0143   BBC R4 LW
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('radio3', 'more')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('radio3', 'radio2')">Page Up</a>
+                <a onclick="toPage('radio3', 'radio4')">Page Down</a>
+            </div>
+        </section>
+        <section class="menulisting" id="radio4">
+            <div class="time" id="datetime"></div>
+            <div class="titles">RADIO</div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0144   BBC R5SX
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0146   Heart Dance
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0147   EWTN Catholic
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0150   Sukh Sagar
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0151   Khushkhabri
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0154   BBC R Cymru
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0160   RT&Eacute; Radio 1
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0164   RT&Eacute; 2FM
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0165   RTE Lyric fm
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0166   RTE R na G
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('radio4', 'more')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('radio4', 'radio3')">Page Up</a>
+                <a onclick="toPage('radio4', 'radio5')">Page Down</a>
+            </div>
+        </section>
+        <section class="menulisting" id="radio5">
+            <div class="time" id="datetime"></div>
+            <div class="titles">RADIO</div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0169   Desi Radio
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0178   Kiss
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0180   Magic
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0185   GN Radio
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0186   Liberty
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0188   Hits Radio
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0200   Absolute '80s
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0201   Absolute '90s
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0202   Jazz FM
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0203   Classic Rock
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('radio5', 'more')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('radio5', 'radio4')">Page Up</a>
+                <a onclick="toPage('radio5', 'radio6')">Page Down</a>
+            </div>
+        </section>
+        <section class="menulisting" id="radio6">
+            <div class="time" id="datetime"></div>
+            <div class="titles">RADIO</div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0210   Newstalk
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0211   BFBS Radio
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0214   UCB Ireland
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0215   Virgin Radio
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    🔈   0216   Scala Radio
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('radio6', 'more')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('radio6', 'radio5')">Page Up</a>
+            </div>
+        </section>
+        <!--Channel Guide -> Adult-->
+        <section class="menulisting" id="adult">
+            <div class="time" id="datetime"></div>
+            <div class="titles">ADULT</div>
+            <div class="guidelisting">
+                <li>
+                    901   Babestation
+                </li>
+                <li>
+                    She's waiting for your call...
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    902   Megas**** TV
+                </li>
+                <li>
+                    Tune in and get some...
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    903   XXX Mums
+                </li>
+                <li>
+                    Mum when she's "out of town"
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    904   XXX Adult Films
+                </li>
+                <li>
+                    24/7 adult films
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    905   XXX Adult Films +1
+                </li>
+                <li>
+                    24/7 adult films [an hour behind]
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    906   Beast Ladies
+                </li>
+                <li>
+                    The best ladies you'll ever see!
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li>
+                    907   Job Experience
+                </li>
+                <li>
+                    Wanna see a job? Or get one...?
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('adult', 'more')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a>+24 hours</a>
+                <a>-24 hours</a>
+            </div>
+        </section>
+        <!--Box Office-->
+        <section class="menulisting" id="boxoffice" name="boxoffice">
+            <li>
+                <div class="num">1</div>
+                MOVIES BY START TIME
+            </li>
+            <li>
+                <div class="num">2</div>
+                MOVIES A—Z
+            </li>
+            <li>
+                <div class="num">3</div>
+                NEW MOVIES
+            </li>
+            <li>
+                <div class="num">4</div>
+                SPORTS & EVENTS
+            </li>
+            <li>
+                <div class="num">5</div>
+                PREVIEWS
+            </li>
+            <li>
+                <div class="num">6</div>
+                ADULT PAY-PER-NIGHT
+            </li>
+            <li>
+                <div class="num">7</div>
+                ADULT MOVIES
+            </li>
+            <div class="links">
+                <a onclick="toPage('boxoffice', 'main')">Go Left</a>
+                <a onclick="toPage('boxoffice', 'services')">Go Right</a>
+                <a>Anytime TV</a>
+                <a>Planner</a>
+                <a onclick="toPage('boxoffice', 'az')">A—Z</a>
+                <a>Favourites</a>
+            </div>
+        </section>
+        <!--Services-->
+        <section class="menulisting" id="services">
+            <li onclick="toPage('services', 'skybox')">
+                <div class="num">1</div>
+                USING YOUR SKY BOX
+            </li>
+            <li onclick="toPage('services', 'telephonenumbers')">
+                <div class="num">2</div>
+                TELEPHONE NUMBERS
+            </li>
+            <li>
+                <div class="num">3</div>
+                PARENTAL CONTROL
+            </li>
+            <li onclick="toPage('services', 'systemsetup')">
+                <div class="num">4</div>
+                SYSTEM SETUP
+            </li>
+            <li>
+                <div class="num">5</div>
+                AUTO STANDBY
+            </li>
+            <li>
+                <div class="num">6</div>
+                FAVOURITE CHANNELS
+            </li>
+            <li onclick="toPage('services', 'otherchannels')">
+                <div class="num">7</div>
+                OTHER CHANNELS
+            </li>
+            </div>
+            <div class="links">
+                <a onclick="toPage('services', 'boxoffice')">Go Left</a>
+                <a onclick="toPage('services', 'interactive')">Go Right</a>
+                <a>Anytime TV</a>
+                <a>Planner</a>
+                <a onclick="toPage('services', 'az')">A—Z</a>
+                <a>Favourites</a>
+            </div>
+        </section>
+        <section class="menulisting" id="skybox">
+            <div class="titles">USING YOUR SKY BOX</div>
+            <div class="ltb">
+                <header>
+                    HELP INFORMATION
+                </header>
+                <main>
+                    • For information on recent changes refer to Sky magazine or channel 999 <br />
+                    • Press 'tv guide' to find out what's on over the next seven days<br />
+                    • To set a Reminder, Autoview or Series Link, highlight a future programme and press 'select'<br />
+                    • Press 'box office' to see what's on and to order an event<br />
+                    • To set up Parental Control press 'services' and choose '3'<br />
+                    • For any problems or for more information refer to the 'Using Your Sky Box' booklet
+                </main>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('skybox', 'services')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
+        <section class="menulisting" id="telephonenumbers">
+            <div class="titles">TELEPHONE NUMBERS</div>
+            <li style="width: 150%; display: flex">
+                Adult Channel
+                <div class="tele">0844 8429 669</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                Adult Channel (pay per night)
+                <div class="tele">0844 411770</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                Adult Nightly
+                <div class="tele">0844 411770</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                Adult: XXX Mums
+                <div class="tele">0844 411770</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                AIT Movistar
+                <div class="tele">08448 553437</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                Amateur Babes
+                <div class="tele">0844 411770</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                BBC Information
+                <div class="tele">03700 100222</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                Blue Tube
+                <div class="tele">0844 411770</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                Channel 4 Services Enquiries
+                <div class="tele">0845 076 0191</div>
+            </li>
+            <li style="width: 150%; display: flex">
+                Chelsea TV
+                <div class="tele">0844 410803</div>
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('telephonenumbers', 'services')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a>Page Down</a>
+            </div>
+        </section>
+        <section class="menulisting" id="systemsetup">
+            <div class="titles">SYSTEM SETUP</div>
+            <li>
+                <div class="num">1</div>
+                PICTURE SETTINGS
+            </li>
+            <li>
+                <div class="num">2</div>
+                SOUND SETTINGS
+            </li>
+            <li>
+                <div class="num">3</div>
+                LANGUAGE & SUBTITLES
+            </li>
+            <li>
+                <div class="num">4</div>
+                ADD CHANNELS
+            </li>
+            <li onclick="toPage('systemsetup', 'systemdetails')">
+                <div class="num">5</div>
+                SYSTEM DETAILS
+            </li>
+            <li>
+                <div class="num">6</div>
+                SIGNAL TEST
+            </li>
+            <li>
+                <div class="num">7</div>
+                SYSTEM TEST
+            </li>
+            <li>
+                <div class="num">8</div>
+                SYSTEM HEALTH CHECK
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('systemsetup', 'services')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
+        <section class="menulisting" id="systemdetails">
+            <div class="titles">SYSTEM DETAILS</div>
+            <div class="detailslisting">
+                <li>
+                    Manufacturer
+                </li>
+                <li style="width: 100%; color: gray">
+                    Pace
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li>
+                    Model Number
+                </li>
+                <li style="width: 100%; color: gray">
+                    3100
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li>
+                    Version Number
+                </li>
+                <li style="width: 100%; color: gray">
+                    9F2104
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li>
+                    Serial Number
+                </li>
+                <li style="width: 100%; color: gray">
+                    987382019821
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li>
+                    Viewing Card Number
+                </li>
+                <li style="width: 100%; color: gray">
+                    No card
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li>
+                    Operating System Version
+                </li>
+                <li style="width: 100%; color: gray">
+                    HTML5
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li>
+                    EPG Software Version
+                </li>
+                <li style="width: 100%; color: gray">
+                    5.10-dv6
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('systemdetails', 'systemsetup')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
+        <section class="menulisting" id="otherchannels">
+            <div class="time" id="dateimte"></div>
+            <div class="titles">OTHER CHANNELS</div>
+            <div class="guidelisting" onclick="window.location.href = 'https://brysonrecords.bandcamp.com/album/sky-web-epg'">
+                <li>
+                    🔈   EPG Background Audio.
+                </li>
+            </div>
+            <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCSf3jsDT5AxHeGxBZ5YEiwQ'">
+                <li>
+                    Chelmsford IT
+                </li>
+            </div>
+            <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCIFzRjg4GM00nRVrNFrOb1g'">
+                <li>
+                    II.Super_Legendary.II (ISLI)
+                </li>
+            </div>
+            <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCPUMaLT4zej0fSHiity3P5w'">
+                <li>
+                    Betty Macaulay
+                </li>
+            </div>
+            <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCXFM2yYtQ3NmMcD33OFZQKg'">
+                <li>
+                    OldDigibox
+                </li>
+            </div>
+            <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCumdQGQazskCznTlAchiOjQ'">
+                <li>
+                    Sky Archive
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('otherchannels', 'services')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
+        <!--Interactive-->
+        <section class="menulisting" id="interactive">
+            <li onclick="window.location.href = 'https://olddigibox.com/'">
+                <div class="num">1</div>
+                OldDigibox
+            </li>
+            <li onclick="window.location.href = 'https://olddigibox.github.io/sky-web-epg/video/LETS_GET_INTERACTIVE!.mp4'">
+                <div class="num">2</div>
+                Sky Active
+            </li>
+            <li onclick="window.location.href = 'https://beatablemeat.github.io'">
+                <div class="num">3</div>
+                Beatable Meat Portal
+            </li>
+            <li onclick="window.location.href = 'https://beatablemeat.github.io/games'">
+                <div class="num">4</div>
+                Beatable Games
+            </li>
+            <li onclick="window.location.href = 'https://github.com/OldDigibox/sky-web-epg'">
+                <div class="num">5</div>
+                Sky Web EPG Source Code
+            </li>
+            <li onclick="window.location.href = 'https://github.com/OldDigibox/sky-web-epg'">
+                <div class="num">6</div>
+                Report Bug/Request Feature
+            </li>
+            <li onclick="window.location.href = 'http://epg.sky.com/demo/landing'">
+                <div class="num">7</div>
+                Sky+HD Web EPG
+            </li>
+            <li onclick="window.location.href = 'https://www.satvmusic.com'">
+                <div class="num">8</div>
+                SATV Music
+            </li>
+            <li onclick="window.location.href = 'https://sites.google.com/view/nepoverload/home'">
+                <div class="num">9</div>
+                nepoverload
+            </li>
+            <li onclick="toPage('interactive', 'interactive2')">
+                <div class="num">0</div>
+                MORE...
+            </li>
+            <div class="links">
+                <a onclick="toPage('interactive', 'services')">Go Left</a>
+            </div>
+        </section>
+        <section class="menulisting" id="interactive2">
+            <li onclick="window.location.href = 'https://phoenixprojectsoftware.github.io'">
+                <div class="num">1</div>
+                The Phoenix Project
+            </li>
+            <li onclick="window.location.href = 'https://brysonrecords.github.io/webpublishing'">
+                <div class="num">2</div>
+                Bryson Records WP
+            </li>
+            <li onclick="/* triggerFYI(testmessage); */ toPage('interactive2', 'fyi')">
+                <div class="num">3</div>
+                FYI Box Test
+            </li>
+            <li onclick="toPage('interactive2', 'sastest')">
+                <div class="num">4</div>
+                Search & Scan Test
+            </li>
+            <li>
+                 EPG MUSIC STREAMS
+            </li>
+            <li onclick="window.location.href = 'https://zeno.fm/sky-web-epg-daytime'">
+                <div class="num">1</div>
+                Daytime Music
+            </li>
+            <li onclick="window.location.href = 'https://zeno.fm/sky-web-epg-primetime'">
+                <div class="num">2</div>
+                Primetime Music
+            </li>
+            <li onclick="window.location.href = 'https://zeno.fm/sky-web-epg-nightclub'">
+                <div class="num">3</div>
+                Nightclub Music
+            </li>
+            <li onclick="window.location.href = 'https://zeno.fm/sky-web-epg-early-morning'">
+                <div class="num">4</div>
+                Early Morning Music
+            </li>
+            <li onclick="toPage('interactive2', 'interactive3')">
+                <div class="num">5</div>
+                MORE...
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a onclick="toPage('interactive2', 'interactive')" style="background-color: yellow; color: black">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('interactive2', 'services')">Go Left</a>
+            </div>
+        </section>
+        <section class="menulisting" id="interactive3">
+            <li>
+                YOUR CONTENT HERE...
+            </li>
+            <li>
+            Contact info@olddigibox.com
+            </li>
+            <li>
+                to advertise your content
+            </li>
+            <li>
+                for FREE!
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a onclick="toPage('interactive3', 'interactive2')" style="background-color: yellow; color: black">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links">
+                <a onclick="toPage('interactive3', 'services')">Go Left</a>
+            </div>
+        </section>
+        <!--FYI-->
+        <section class="menulisting" id="fyi">
+            <div class="fyi">
+                <header>
+                    FOR YOUR INFORMATION
+                </header>
+                <main>
+                    Sample Text
+                </main>
+            </div>
+        </section>
+        <section class="menulisting" id="sastest">
+            <div class="sas">
+                <header></header>
+                <main>Further schedule information not available</main>
+                <footer></footer>
+            </div>
+        </section>
+        <section class="menulisting" id="az">
+            <div class="titles">A-Z LISTINGS</div>
+            <li>
+                <div class="num">1</div>
+                ALL PROGRAMMES
+            </li>
+            <li>
+                <div class="num">2</div>
+                ENTERTAINMENT
+            </li>
+            <li>
+                <div class="num">3</div>
+                LIFESTYLE & CULTURE
+            </li>
+            <li>
+                <div class="num">4</div>
+                MOVIES
+            </li>
+            <li>
+                <div class="num">5</div>
+                SPORTS
+            </li>
+            <li>
+                <div class="num">6</div>
+                NEWS
+            </li>
+            <li>
+                <div class="num">7</div>
+                DOCUMENTARIES
+            </li>
+            <li>
+                <div class="num">8</div>
+                KIDS
+            </li>
+            <li>
+                <div class="num">9</div>
+                MUSIC
+            </li>
+            <li>
+            <div class="num">0</div>
+            MORE...
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a style="color: black; background-color: yellow" onclick="toPage('az', 'main')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
+    </main>
+    <!--<audio id="player" allow="autoplay" autoplay>
+    </audio>-->
+</body>
+<script src="epgsongs.js"></script>
+<script src="date.js"></script>
+</html>
