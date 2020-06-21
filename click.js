@@ -1,3 +1,13 @@
+$(document).ready(function() {
+   $(".player video").hover(function() {
+       $("#sastest").css("display","flex");
+       console.log($("#sastest")).hover();
+    }, function() {
+        wait(5000)
+        $("#sastest").css("display","none");
+    });
+});
+
 function toPage(frompage, topage) {
     $(".menulisting#" + frompage).css("display", "none");
     $(".menulisting#" + topage).css("display", "flex");
@@ -108,4 +118,12 @@ function toPage(frompage, topage) {
 function playVideo(name) {
     const file = "vid-" + name + ".html";
     window.location.href = file;
+}
+
+function wait(ms) {
+    var start = new Date().getTime();
+    var end= start;
+    while (end < start + ms) {
+        end = new Date().getTime();
+    }
 }
