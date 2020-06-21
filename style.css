@@ -402,6 +402,60 @@ li .tele {
         justify-content: center;
     }
 
+
+#planner li {
+    font-family: 'ZurichTV';
+    width: 134%;
+}
+
+#planner li .prgm {
+    font-family: inherit;
+    width: 220px;
+}    
+
+#planner li .rating {
+    background: #5887FF;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    color: lightgrey;
+    font-family: inherit;
+}
+
+#planner li .ch {
+    width: 180px;
+    background: #5887FF;
+    color: lightgrey;
+    font-family: inherit;
+    padding: 0px 5px;
+    height: 100%;
+}
+
+#planner li:hover .rating {
+    background: var(--sub-colour-hover);
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    color: var(-listnum-colour-hover);
+    font-family: inherit;
+}
+
+#planner li .status {
+    width: 180px;
+    text-align: center;
+    font-family: inherit;
+    height: 100%;
+}    
+
+#planner li:hover .ch {
+    width: 180px;
+    background: var(--sub-colour-hover);
+    color: var(--listnum-colour-hover);
+    font-family: inherit;
+    padding: 0px 5px;
+    height: 100%;
+}
+
 /* Font Families */
 @font-face {
     font-family: 'Zurich';
