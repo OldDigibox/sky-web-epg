@@ -113,6 +113,9 @@ function toPage(frompage, topage) {
         case 'azprog':
             $('main').addClass('bground2');
             break;
+        case 'azent':
+            $('main').addClass('bground2');
+            break;
     }
 
 }
