@@ -16,12 +16,12 @@ const playlist = [{
 {
     name: 'daytime',
     times: [11, 12, 13, 14, 15, 16, 17, 18],
-    songs: ["https://stream.zenolive.com/2993k44bf2zuv.aac"]
+    songs: ["https://node-05.zeno.fm/2993k44bf2zuv.aac?rj-ttl=5&rj-tok=AAABctinVPUAKZhO9keANgvR5A"]
 },
 {
     name: 'nightclub',
     times: [21, 22, 23],
-    songs: ["https://node-27.zeno.fm/vq7vtswbf2zuv?rj-ttl=5&rj-tok=AAABctOV6GQADgjz5v0t46Ro9w"]
+    songs: ["https://node-05.zeno.fm/2993k44bf2zuv.aac?rj-ttl=5&rj-tok=AAABctinVPUAKZhO9keANgvR5A"]
 }
 ]
 
