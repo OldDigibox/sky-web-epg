@@ -123,6 +123,10 @@ li .num {
     text-align: center;
 }
 
+li.nonum {
+    padding-left: 5px;
+}
+
 li .tele {
     background: var(--sub-colour);
     width: 300px;
@@ -222,9 +226,9 @@ li .tele {
 
 .guidelisting {
     width: 140%;
-    height: 410px;
-    margin-top: auto;
-    margin-bottom: auto;
+    /* height: 410px; */
+    margin-top: 1px;
+    margin-bottom: 0px;
     display: inline-flex;
     flex-direction: row;
     user-select: none;
