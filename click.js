@@ -111,6 +111,9 @@ function toPage(frompage, topage) {
         case 'planner':
             $('main').addClass('bground2');
             break;
+        case 'azprog':
+            $('main').addClass('bground2');
+            break;
     }
 
 }

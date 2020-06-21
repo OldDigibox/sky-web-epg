@@ -456,6 +456,59 @@ li .tele {
     height: 100%;
 }
 
+#azprog li {
+    font-family: 'ZurichTV';
+    width: 150%;
+}
+
+    #azprog li .prgm {
+        font-family: inherit;
+        width: 270px;
+    }
+
+    #azprog li .rating {
+        background: #5887FF;
+        width: 40px;
+        height: 100%;
+        text-align: center;
+        color: lightgrey;
+        font-family: inherit;
+    }
+
+    #azprog li .ch {
+        width: 180px;
+        background: #5887FF;
+        color: lightgrey;
+        font-family: inherit;
+        padding: 0px 5px;
+        height: 100%;
+    }
+
+    #azprog li:hover .rating {
+        background: var(--sub-colour-hover);
+        width: 40px;
+        height: 100%;
+        text-align: center;
+        color: var(--listnum-colour-hover);
+        font-family: inherit;
+    }
+
+    #azprog li .status {
+        width: 180px;
+        text-align: center;
+        font-family: inherit;
+        height: 100%;
+    }
+
+    #azprog li:hover .ch {
+        width: 180px;
+        background: var(--sub-colour-hover);
+        color: var(--listnum-colour-hover);
+        font-family: inherit;
+        padding: 0px 5px;
+        height: 100%;
+    }
+
 .player {
     background: black;
     height: 600px;
