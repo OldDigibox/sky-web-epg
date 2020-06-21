@@ -456,6 +456,13 @@ li .tele {
     height: 100%;
 }
 
+.player {
+    background: black;
+    height: 600px;
+    width: 800px;
+    position: absolute;
+}
+
 /* Font Families */
 @font-face {
     font-family: 'Zurich';
