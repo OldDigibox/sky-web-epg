@@ -98,6 +98,9 @@ function toPage(frompage, topage) {
         case 'healthcheck':
             $('main').addClass('bground2');
             break;
+        case 'planner':
+            $('main').addClass('bground2');
+            break;
     }
 
 }
