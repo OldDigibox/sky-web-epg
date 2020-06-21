@@ -95,6 +95,9 @@ function toPage(frompage, topage) {
         case 'az':
             $('main').addClass('bground2');
             break;
+        case 'healthcheck':
+            $('main').addClass('bground2');
+            break;
     }
 
 }
