@@ -1,7 +1,6 @@
 $(document).ready(function() {
    $(".player video").hover(function() {
        $("#sastest").css("display","flex");
-       console.log($("#sastest")).hover();
     }, function() {
         wait(5000)
         $("#sastest").css("display","none");

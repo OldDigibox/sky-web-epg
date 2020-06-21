@@ -353,7 +353,7 @@ li .tele {
         background-color: white;
         list-style-type: none;
         color: var(--font-colour-hover);
-        text-align: right;
+        text-align: center;
         font-size: 1.6rem;
     }
 
@@ -519,6 +519,10 @@ li .tele {
 #sastest {
     position: absolute; bottom: 0;
     height: auto;
+}
+
+#ps,#pl {
+    font-family: 'ZurichTV';
 }
 
 /* Font Families */
