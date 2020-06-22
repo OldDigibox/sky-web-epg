@@ -21,7 +21,7 @@ const playlist = [{
 {
     name: 'nightclub',
     times: [21, 22, 23],
-    songs: ["https://node-05.zeno.fm/2993k44bf2zuv.aac?rj-ttl=5&rj-tok=AAABctinVPUAKZhO9keANgvR5A"]
+    songs: ["https://node-11.zeno.fm/vq7vtswbf2zuv?rj-ttl=5&rj-tok=AAABct4AdzsAdv_CNVOTdvtabg"]
 }
 ]
 
