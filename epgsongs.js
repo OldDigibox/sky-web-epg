@@ -1,27 +1,27 @@
 const playlist = [{
     name: 'earlyMorning',
     times: [0, 1, 2, 3, 4, 5, 6],
-    songs: ["https://node-26.zeno.fm/et8ras3bf2zuv?rj-ttl=5&rj-tok=AAABcuJjwFcADVCYC_XnxUj6IA"]
+    songs: ["https://stream.zeno.fm/et8ras3bf2zuv"]
 },
     {
         name: 'morning',
         times: [6, 7, 8, 9],
-        songs: ["https://node-32.zeno.fm/7rgndyacf2zuv?rj-ttl=5&rj-tok=AAABcuJkNYQAehy2sZr1k3D73w"]
+        songs: ["https://stream.zeno.fm/7rgndyacf2zuv"]
 },
 {
     name: 'primetime',
     times: [19, 20],
-    songs: ["https://node-33.zeno.fm/yxauxfbcf2zuv?rj-ttl=5&rj-tok=AAABcuJiMWIAaM2KMdKWUwNzzw"]
+    songs: ["https://stream.zeno.fm/yxauxfbcf2zuv"]
 },
 {
     name: 'daytime',
     times: [11, 12, 13, 14, 15, 16, 17, 18],
-    songs: ["https://node-09.zeno.fm/bwens44bf2zuv?rj-ttl=5&rj-tok=AAABcuJi_VMA-MzzQNQAmKeu2A"]
+    songs: ["https://stream.zeno.fm/bwens44bf2zuv"]
 },
 {
     name: 'nightclub',
     times: [21, 22, 23],
-    songs: ["https://node-35.zeno.fm/vq7vtswbf2zuv?rj-ttl=5&rj-tok=AAABcuJihfkAcwCdl8D2eq2_fw"]
+    songs: ["https://stream.zeno.fm/vq7vtswbf2zuv"]
 }
 ]
 
