@@ -76,6 +76,9 @@ main {
 .menulisting#azent {
     width: 87%;
 }
+.menulisting#boffice {
+    width: 87%;
+}
 
 .menulisting {
     width: 65%;
@@ -459,6 +462,59 @@ li .tele {
     padding: 0px 5px;
     height: 100%;
 }
+
+#pantiesoffmateinnit li {
+    font-family: 'ZurichTV';
+    width: 150%;
+}
+
+#pantiesoffmateinnit li .prgm {
+    font-family: inherit;
+    width: 270px;
+}
+
+#pantiesoffmateinnit li .rating {
+    background: #5887FF;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    color: lightgrey;
+    font-family: inherit;
+}
+
+#pantiesoffmateinnit li .ch {
+    width: 180px;
+    background: #5887FF;
+    color: lightgrey;
+    font-family: inherit;
+    padding: 0px 5px;
+    height: 100%;
+}
+
+#pantiesoffmateinnit li:hover .rating {
+    background: var(--sub-colour-hover);
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    color: var(--listnum-colour-hover);
+    font-family: inherit;
+}
+
+#pantiesoffmateinnit li .status {
+    width: 180px;
+    text-align: center;
+    font-family: inherit;
+    height: 100%;
+}
+
+    #pantiesoffmateinnit li:hover .ch {
+        width: 180px;
+        background: var(--sub-colour-hover);
+        color: var(--listnum-colour-hover);
+        font-family: inherit;
+        padding: 0px 5px;
+        height: 100%;
+    }
 
 #azprog li {
     font-family: 'ZurichTV';

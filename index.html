@@ -58,7 +58,7 @@
             </li>
             <div class="links">
                 <a onclick="toPage('main', 'boxoffice')">Go Right</a>
-                <a onclick="toPage('main', 'planner')">Planner</a>                
+                <a onclick="toPage('main', 'planner')">Planner</a>
                 <a onclick="toPage('main', 'az')">A-Z</a>
             </div>
         </section>
@@ -554,7 +554,7 @@
                 </li>
             </div>
             <div class="guidelisting">
-                <li class="nonum"> 
+                <li class="nonum">
                     310   Sky Drama
                 </li>
                 <li class="nonum">
@@ -845,7 +845,7 @@
             <div class="guidelisting">
                 <li>
                     🔈   0114   CapitalXTRA
-                </li class="nonum">
+                </li>
             </div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -1185,37 +1185,81 @@
         </section>
         <!--Box Office-->
         <section class="menulisting" id="boxoffice" name="boxoffice">
-            <li>
+            <li onclick="toPage('boxoffice', 'boffice')">
                 <div class="num">1</div>
                 MOVIES BY START TIME
             </li>
-            <li>
+            <li onclick="toPage('boxoffice', 'boffice')">
                 <div class="num">2</div>
                 MOVIES A—Z
             </li>
-            <li>
+            <li onclick="toPage('boxoffice', 'boffice')">
                 <div class="num">3</div>
                 NEW MOVIES
             </li>
-            <li>
+            <li onclick="toPage('boxoffice', 'boffice')">
                 <div class="num">4</div>
                 SPORTS & EVENTS
             </li>
-            <li>
+            <li onclick="toPage('boxoffice', 'boffice')">
                 <div class="num">5</div>
                 PREVIEWS
             </li>
-            <li>
+            <li onclick="toPage('boxoffice', 'pantiesoffmateinnit')">
                 <div class="num">6</div>
                 ADULT PAY-PER-NIGHT
             </li>
-            <li>
+            <li onclick="toPage('boxoffice', 'boffice')">
                 <div class="num">7</div>
                 ADULT MOVIES
             </li>
             <div class="links">
                 <a onclick="toPage('boxoffice', 'main')">Go Left</a>
                 <a onclick="toPage('boxoffice', 'services')">Go Right</a>
+            </div>
+        </section>
+        <section class="menulisting" id="pantiesoffmateinnit">
+            <div class="titles">ADULT PAY-PER-NIGHT</div>
+            <li class="nonum" onclick="window.location.href = 'https://www.youtube.com/watch?v=fORaTSqnmiE'">
+                <div class="prgm">Lovely Drink Milkshakes!</div>
+                <div class="rating">R18</div>
+                <div class="status"></div>
+                <div class="ch">Megaslutz TV</div>
+            </li>
+            <li class="nonum" onclick="window.location.href = 'https://www.youtube.com/watch?v=5KOG4Jji2Po'">
+                <div class="prgm">THREE MILKSHAKES?!</div>
+                <div class="rating">R18</div>
+                <div class="status"></div>
+                <div class="ch">Beast Ladies</div>
+            </li>
+            <li class="nonum" onclick="window.location.href = 'https://www.youtube.com/watch?v=kXyrxQ1VSPQ'">
+                <div class="prgm">Testicular Evacuation</div>
+                <div class="rating">X</div>
+                <div class="status"></div>
+                <div class="ch">Babestation</div>
+            </li>
+            <li class="nonum" onclick="window.location.href = 'https://www.youtube.com/watch?v=hALtyM9az9A'">
+                <div class="prgm">XXXin da sky mate</div>
+                <div class="rating">X</div>
+                <div class="status"></div>
+                <div class="ch">XXX Mums</div>
+            </li>
+            <li class="nonum" onclick="window.location.href = 'https://www.youtube.com/watch?v=DMjCmHE71q4'">
+                <div class="prgm">Thick Barney</div>
+                <div class="rating">R18</div>
+                <div class="status"></div>
+                <div class="ch">24/7 Adult Films</div>
+            </li>
+            <li class="nonum" onclick="https://www.youtube.com/watch?v=AZ7OlHk-eRE">
+                <div class="prgm">Gaybona USA</div>
+                <div class="rating">X</div>
+                <div class="status"></div>
+                <div class="ch">24/7 Adult Films</div>
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a onclick="toPage('pantiesoffmateinnit', 'boxoffice')" style="color: black; background-color: yellow">BACK UP</a>
+                <a>to return</a>
             </div>
         </section>
         <!--Services-->
@@ -1763,7 +1807,7 @@
                     FOR YOUR INFORMATION
                 </header>
                 <main>
-                    There is no programmes of this type
+                    There are no programmes of this type
                 </main>
                 <div class="back">
                     <a>Press</a>
@@ -1773,68 +1817,69 @@
                     <a>to confirm</a>
                 </div>
             </div>
-            <section class="menulisting" id="boffice">
-                <div class="fyi">
-                    <header>
-                        FOR YOUR INFORMATION
-                    </header>
-                    <main>
-                        There are no programmes of this type
-                    </main>
-                    <div class="back">
-                        <a>Press</a>
-                        <a onclick="toPage('boffice', 'boxoffice')" style="color: black; background-color: yellow">BACK UP</a>
-                        <a>or</a>
-                        <a onclick="toPage('boffice', 'boxoffice')" style="color: black; background-color: yellow">SELECT</a>
-                        <a>to confirm</a>
-                    </div>
+        </section>
+        <section class="menulisting" id="boffice">
+            <div class="fyi">
+                <header>
+                    FOR YOUR INFORMATION
+                </header>
+                <main>
+                    There are no programmes of this type
+                </main>
                 </div>
-            </section>
-            <section class="menulisting" id="planner">
-                <div class="titles">SKY+ PLANNER</div>
-                <li class="nonum">
-                    <div class="prgm">New: Celebrity Gogglebox</div>
-                    <div class="rating"></div>
-                    <div class="status">RECORDED</div>
-                    <div class="ch">Channel 4</div>
-                </li>
-                <li class="nonum">
-                    <div class="prgm">An Idiot Abroad</div>
-                    <div class="rating"></div>
-                    <div class="status">RECORDED</div>
-                    <div class="ch">Sky One</div>
-                </li>
-                <li class="nonum">
-                    <div class="prgm">World War Z</div>
-                    <div class="rating">15</div>
-                    <div class="status">VIEWED</div>
-                    <div class="ch">Film4 HD</div>
-                </li>
-                <li class="nonum">
-                    <div class="prgm">Arthur (1981)</div>
-                    <div class="rating">15</div>
-                    <div class="status">RECORDED</div>
-                    <div class="ch">Sky Greats</div>
-                </li>
-                <li class="nonum">
-                    <div class="prgm">Arthur 2: On the Rocks</div>
-                    <div class="rating">PG</div>
-                    <div class="status">RECORDED</div>
-                    <div class="ch">Sky Greats</div>
-                </li>
-                <li class="nonum">
-                    <div class="prgm">Friends</div>
-                    <div class="rating"></div>
-                    <div class="status">PART REC</div>
-                    <div class="ch">ComedyCentral</div>
-                </li>
                 <div class="back">
                     <a>Press</a>
-                    <a onclick="toPage('planner', 'main')" style="color: black; background-color: yellow">BACK UP</a>
-                    <a>to return</a>
+                    <a onclick="toPage('boffice', 'boxoffice')" style="color: black; background-color: yellow">BACK UP</a>
+                    <a>or</a>
+                    <a onclick="toPage('boffice', 'boxoffice')" style="color: black; background-color: yellow">SELECT</a>
+                    <a>to confirm</a>
                 </div>
-            </section>
-</main>
+        </section>
+        <section class="menulisting" id="planner">
+            <div class="titles">SKY+ PLANNER</div>
+            <li class="nonum">
+                <div class="prgm">New: Celebrity Gogglebox</div>
+                <div class="rating"></div>
+                <div class="status">RECORDED</div>
+                <div class="ch">Channel 4</div>
+            </li>
+            <li class="nonum">
+                <div class="prgm">An Idiot Abroad</div>
+                <div class="rating"></div>
+                <div class="status">RECORDED</div>
+                <div class="ch">Sky One</div>
+            </li>
+            <li class="nonum">
+                <div class="prgm">World War Z</div>
+                <div class="rating">15</div>
+                <div class="status">VIEWED</div>
+                <div class="ch">Film4 HD</div>
+            </li>
+            <li class="nonum">
+                <div class="prgm">Arthur (1981)</div>
+                <div class="rating">15</div>
+                <div class="status">RECORDED</div>
+                <div class="ch">Sky Greats</div>
+            </li>
+            <li class="nonum">
+                <div class="prgm">Arthur 2: On the Rocks</div>
+                <div class="rating">PG</div>
+                <div class="status">RECORDED</div>
+                <div class="ch">Sky Greats</div>
+            </li>
+            <li class="nonum">
+                <div class="prgm">Friends</div>
+                <div class="rating"></div>
+                <div class="status">PART REC</div>
+                <div class="ch">ComedyCentral</div>
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a onclick="toPage('planner', 'main')" style="color: black; background-color: yellow">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
+    </main>
     <!--<audio id="player" allow="autoplay" autoplay>
     </audio>-->
 </body>
