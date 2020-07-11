@@ -4,7 +4,7 @@ latest Sky+ EPG version `5.08.6` (some elements will be reused from `3.8.8`), we
 ![screenshot](Capture.PNG)
 
 ## What channel listing is this based on?
-This is based on the channel listing for ***London SD.***
+This is based on any real life channel listing provided by Sky. This is based on our web-based channel listing, the **OLDDIGIBOX NETWORK.**
 
 # Sky Web EPG License
 ## Copyright © 2020 OldDigibox
