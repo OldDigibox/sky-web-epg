@@ -122,6 +122,9 @@ function toPage(frompage, topage) {
         case 'pantiesoffmateinnit': // Don't ask
             $('main').addClass('bground2');
             break;
+        case 'systemtest':
+            $('main').addClass('bground2');
+            break;
     }
 
 }

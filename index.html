@@ -1370,6 +1370,22 @@
                 <a>Page Down</a>
             </div>
         </section>
+        <section class="menulisting" id="systemtest">
+            <div class="titles">SYSTEM TEST</div>
+            <div class="fyi">
+                <header>
+                    SYSTEM TEST
+                </header>
+                <main>
+                    Telephone line not connected
+                </main>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="color: black; background-color: yellow" onclick="toPage('systemtest', 'systemsetup')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
         <section class="menulisting" id="systemsetup">
             <div class="titles">SYSTEM SETUP</div>
             <li>
@@ -1396,7 +1412,7 @@
                 <div class="num">6</div>
                 SIGNAL TEST
             </li>
-            <li>
+            <li onclick="toPage('systemsetup', 'systemtest')">
                 <div class="num">7</div>
                 SYSTEM TEST
             </li>
