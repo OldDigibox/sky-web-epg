@@ -141,3 +141,14 @@ function wait(ms) {
         end = new Date().getTime();
     }
 }
+
+function setpixelated(context) {
+    context['imageSmoothingEnabled'] = false;       /* standard */
+    context['mozImageSmoothingEnabled'] = false;    /* Firefox */
+    context['oImageSmoothingEnabled'] = false;      /* Opera */
+    context['webkitImageSmoothingEnabled'] = false; /* Safari */
+    context['msImageSmoothingEnabled'] = false;     /* IE */
+}
+
+var canvas = document.getElementById('titles')
+setpixelated(canvas.getContext('2d'))

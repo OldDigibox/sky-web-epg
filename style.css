@@ -303,6 +303,8 @@ li .tele {
     font-size: 2rem;
     text-align: left;
     color: var(--main-colour);
+    font-smooth: never;
+    -webkit-font-smoothing: none;
 }
 
 /* FYI Box */
