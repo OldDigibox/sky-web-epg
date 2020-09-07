@@ -1,27 +1,27 @@
 const playlist = [{
     name: 'earlyMorning',
     times: [0, 1, 2, 3, 4, 5, 6],
-    songs: ["media/early_morning.m3u"]
+    songs: ["https://stream.zeno.fm/et8ras3bf2zuv"]
 },
     {
         name: 'morning',
         times: [6, 7, 8, 9],
-        songs: ["media/morning.m3u"]
+        songs: ["https://stream.zeno.fm/7rgndyacf2zuv"]
 },
 {
     name: 'primetime',
     times: [19, 20],
-    songs: ["media/primetime.m3u"]
+    songs: ["https://stream.zeno.fm/yxauxfbcf2zuv"]
 },
 {
     name: 'daytime',
     times: [11, 12, 13, 14, 15, 16, 17, 18],
-    songs: ["media/daytime.m3u"]
+    songs: ["https://stream.zeno.fm/bwens44bf2zuv"]
 },
 {
     name: 'nightclub',
     times: [21, 22, 23],
-    songs: ["media/nightclub.m3u"]
+    songs: ["https://stream.zeno.fm/vq7vtswbf2zuv"]
 }
 ]
 
