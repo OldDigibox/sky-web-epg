@@ -125,6 +125,18 @@ function toPage(frompage, topage) {
         case 'systemtest':
             $('main').addClass('bground2');
             break;
+        case 'phone2':
+            $('main').addClass('bground2');
+            break;
+        case 'phone3':
+            $('main').addClass('bground2');
+            break;
+        case 'phone4':
+            $('main').addClass('bground2');
+            break;
+        case 'phone5':
+            $('main').addClass('bground2');
+            break;
     }
 
 }
