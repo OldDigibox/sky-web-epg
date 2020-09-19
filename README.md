@@ -16,4 +16,4 @@ OldDigibox is in no way affiliated with Sky plc or its subsidiaries.
 You may, free of charge, clone, modify and/or re-distribute "Sky Web EPG" but only for free. "Sky Web EPG" contains tracks published by SATV.
 © SATV
 
-"Sky Web EPG" contains tracks from the album "Sky Web EPG" published by Bryson Records Web Publishing Ltd.
+"Sky Web EPG" contains tracks from the albums "Sky Web EPG" and "Sky Web EPG 2" published by Bryson Records Web Publishing Ltd.
