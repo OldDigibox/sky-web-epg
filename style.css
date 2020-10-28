@@ -304,9 +304,16 @@ li .tele {
     text-align: left;
     color: var(--main-colour);
     font-smooth: never;
+    box-shadow: 0 0;
     -webkit-font-smoothing: none;
+    filter: contrast(1);
 }
 
+li {
+    font-smooth: never;
+    -webkit-font-smoothing: never;
+    box-shadow: 0 0;
+}
 /* FYI Box */
 
 .fyi {
