@@ -1,6 +1,6 @@
 const playlist = [{
     name: 'earlyMorning',
-    times: [0, 1, 2, 3, 4, 5, 6],
+    times: [0, 1, 2, 3, 4, 5],
     songs: ["https://stream.zeno.fm/et8ras3bf2zuv"]
 },
     {
