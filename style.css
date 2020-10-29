@@ -6,14 +6,15 @@
 :root {
     font-size: 16px;
     --font-colour: white;
-    --main-colour: rgb(0, 37, 201);
-    --sub-colour: rgb(0, 26, 143);
+    --main-colour: rgb(128,0,0);
+    --sub-colour: rgb(100, 0, 0);
     --listnum-colour: rgb(126, 126, 255);
     --main-colour-hover: #FCDA25;
     --sub-colour-hover: #fec200;
     --listnum-colour-hover: rgb(0, 0, 179);
     --font-colour-hover: rgb(0, 0, 179);
-    --background-image-blank: url('https://media.discordapp.net/attachments/649968233553723405/709086018942402631/image1.jpg');
+    --title-colour: rgb(255, 255, 255);
+    --background-image-blank: url('img/blank.jpg');
     --background-image: url("img/tv_guide.png");
 }
 
@@ -23,7 +24,7 @@
 }
 
 .bground2 {
-    background-image: url('https://media.discordapp.net/attachments/649968233553723405/709086018942402631/image1.jpg');
+    background-image: url('img/blank.jpg');
 }
 
 .boxoffice {
@@ -302,7 +303,7 @@ li .tele {
     width: 100%;
     font-size: 2rem;
     text-align: left;
-    color: var(--main-colour);
+    color: var(--title-colour);
     font-smooth: never;
     box-shadow: 0 0;
     -webkit-font-smoothing: none;
