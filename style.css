@@ -19,7 +19,7 @@
 
 /* Backgrounds for pages */
 .bground1 {
-    background-image: url("img/tv_guide.png");
+    background-image: url("https://media.discordapp.net/attachments/771452339541770303/771456704096501810/tv_guide.png");
 }
 
 .bground2 {
@@ -27,15 +27,15 @@
 }
 
 .boxoffice {
-    background-image: url('img/box_office.png');
+    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771456695490052126/box_office.png');
 }
 
 .services {
-    background-image: url('img/services.png');
+    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771456703920734268/services.png');
 }
 
 .interactive {
-    background-image: url('img/interactive.png')
+    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771456702901125190/interactive.png')
 }
 
 body {
