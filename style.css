@@ -20,23 +20,23 @@
 
 /* Backgrounds for pages */
 .bground1 {
-    background-image: url("img/tv_guide.png");
+    background-image: url("https://media.discordapp.net/attachments/771452339541770303/771452448853458994/tv_guide.png");
 }
 
 .bground2 {
-    background-image: url('img/blank.jpg');
+    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771452443526430730/blank.jpg');
 }
 
 .boxoffice {
-    background-image: url('img/box_office.png');
+    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771452455669465158/box_office.png');
 }
 
 .services {
-    background-image: url('img/services.png');
+    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771452457745776681/services.png');
 }
 
 .interactive {
-    background-image: url('img/interactive.png')
+    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771452455657275392/interactive.png')
 }
 
 body {
