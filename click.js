@@ -137,8 +137,10 @@ function toPage(frompage, topage) {
         case 'phone5':
             $('main').addClass('bground2');
             break;
+        case 'mov2':
+            $('main').addClass('bground2');
+            break;
     }
-
 }
 
 function playVideo(name) {
