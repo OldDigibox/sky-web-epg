@@ -15,9 +15,14 @@ const playlist = [{
 },
 {
     name: 'daytime',
-    times: [11, 12, 13, 14, 15, 16, 17, 18],
+    times: [11, 12, 13, 14, 15],
     songs: ["https://stream.zeno.fm/bwens44bf2zuv"]
-},
+    },
+    {
+        name: 'sunset',
+        times: [16, 17, 18],
+        songs: ["https://stream.zeno.fm/nge0aca44d0uv"],
+    },
 {
     name: 'nightclub',
     times: [21, 22, 23],
