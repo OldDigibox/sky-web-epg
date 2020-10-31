@@ -201,22 +201,82 @@ li .tele {
         color: var(--font-colour-hover);
     }
 
+.red {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(198, 26, 27);
+    display: inline-block;
+}
+
+.green {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(80, 191, 79);
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.yellow {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(196, 176, 71);
+    display: inline-block;
+    margin-left: 100px;
+}
+
+.blue {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(1, 37, 132);
+    display: inline-block;
+    margin-left: 100px;
+}
+
+
 .links {
     position: absolute;
     bottom: -4%;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-align: right;
-    color: var(--main-colour);
     display: inline;
-    overflow: hidden;
-    overflow-x: hidden;
+    /*overflow: hidden;
+    overflow-x: hidden; */
     white-space: nowrap;
+    font-family: ZurichTV;
+}
+
+.links a {
+    font-family: ZurichTV;
+    color: var(--sub-colour);
 }
 
 .links a:hover {
-    color: var(--font-colour-hover)
+    color: white;
 }
+
+.tvlinks {
+    position: absolute;
+    bottom: -4%;
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: left;
+    display: inline;
+    /*overflow: hidden;
+    overflow-x: hidden; */
+    white-space: nowrap;
+    font-family: ZurichTV;
+}
+
+    .tvlinks a {
+        font-family: ZurichTV;
+        color: var(--sub-colour);
+        text-align: right;
+    }
+
+        .tvlinks a:hover {
+            color: white;
+        }
 
 .back {
     position: absolute;
@@ -302,11 +362,7 @@ li .tele {
     width: 100%;
     font-size: 2rem;
     text-align: left;
-    color: var(--main-colour);
-    font-smooth: never;
-    box-shadow: 0 0;
-    -webkit-font-smoothing: none;
-    filter: contrast(1);
+    color: var(--sub-colour);
 }
 
 li {
