@@ -69,21 +69,6 @@ main {
     display: flex;
 }
 
-.menulisting#fyi {
-    width: 87%;
-}
-
-.menulisting#azent {
-    width: 87%;
-}
-.menulisting#boffice {
-    width: 87%;
-}
-
-.menulisting#systemtest {
-    width: 87%;
-}
-
 .menulisting {
     width: 65%;
     height: 410px;
@@ -258,7 +243,6 @@ li .tele {
 .tvlinks {
     position: absolute;
     bottom: -4%;
-    width: 100%;
     font-size: 0.9rem;
     text-align: left;
     display: inline;
@@ -271,7 +255,8 @@ li .tele {
     .tvlinks a {
         font-family: ZurichTV;
         color: var(--sub-colour);
-        text-align: right;
+        width: 100%;
+        text-align: left;
     }
 
         .tvlinks a:hover {
@@ -387,7 +372,7 @@ li {
 }
 
     .fyi header {
-        width: 100%;
+        width: 150%;
         height: 31.5px;
         background: var(--main-colour-hover);
         list-style-type: none;
@@ -402,7 +387,7 @@ li {
         background: var(--main-colour);
         color: var(--font-colour);
         font-size: 1.6rem;
-        width: 100%;
+        width: 150%;
         display: flex;
         align-items: center;
         justify-content: center;
