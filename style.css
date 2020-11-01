@@ -352,7 +352,12 @@ li .tele {
     width: 100%;
     font-size: 1.5rem;
     text-align: left;
-    color: var(--main-colour);
+    color: var(--sub-colour);
+    font-family: ZurichTV;
+}
+
+.time div {
+    font-family: ZurichTV;
 }
 
 .titles {
