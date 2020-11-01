@@ -1,2 +1,4 @@
-var dt = new Date();
-document.getElementById("datetime").innerHTML = (("0" + dt.getDate()).slice(-2)) + "." + (("0" + (dt.getMonth() + 1)).slice(-2)) + "." + (dt.getFullYear()) + " " + (("0" + dt.getHours()).slice(-2)) + ":" + (("0" + dt.getMinutes()).slice(-2));
+// Here we use Moment.JS - it's outdated, but it works.
+moment();
+var now = moment().format("h.mma ddd D MMM");
+$('.time').html(now); // This line uses JQuery but that's ok since we have it in the HTML
