@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="momentjs/moment.js" type="text/javascript"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Sky Web EPG by OldDigibox">
@@ -75,9 +76,9 @@
                 MORE...
             </li>
             <div class="links">
-                <a onclick="toPage('main', 'boxoffice')">Go Right</a>
-                <a onclick="toPage('main', 'planner')">Planner</a>
-                <a onclick="toPage('main', 'az')">A-Z</a>
+                <div class="red"></div> <a onclick="toPage('main', 'boxoffice')">Go Right</a>
+                <div class="green"></div> <a onclick="toPage('main', 'planner')">Planner</a>
+                <div class="yellow"></div> <a onclick="toPage('main', 'az')">A—Z</a>
             </div>
         </section>
         <!--More Page-->
@@ -115,10 +116,15 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('more', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
+            <div class="links">
+                <div class="red"></div> <a onclick="toPage('more', 'boxoffice')">Go Right</a>
+                <div class="green"></div> <a onclick="toPage('more', 'planner')">Planner</a>
+                <div class="yellow"></div> <a onclick="toPage('more', 'az')">A—Z</a>
+            </div>
         </section>
         <!--Channel Guide -> All Channels-->
         <section class="menulisting" id="guide">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">ALL CHANNELS</div>
             <div class="guidelisting" onclick="window.location.href = 'https://www.bbc.co.uk/bbcone'">
                 <li class="nonum">
@@ -205,14 +211,14 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('guide', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <!--Channel Guide -> Entertainment-->
         <section class="menulisting" id="entertainment">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">ENTERTAINMENT</div>
             <div class="guidelisting" onclick="window.location.href = 'https://www.bbc.co.uk/bbcone'">
                 <li class="nonum">
@@ -299,14 +305,14 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('entertainment', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('entertainment', 'ent2')">Page Down</a>
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="green"></div> <a onclick="toPage('entertainment', 'ent2')">Page Down</a>
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <section class="menulisting" id="ent2">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">ENTERTAINMENT</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -393,15 +399,15 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('ent2', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('ent2', 'entertainment')">Page Up</a>
-                <a onclick="toPage('ent2', 'ent3')">Page Down</a>
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="red"></div> <a onclick="toPage('ent2', 'entertainment')">Page Up</a>
+                <div class="green"></div> <a onclick="toPage('ent2', 'ent3')">Page Down</a>
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <section class="menulisting" id="ent3">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">ENTERTAINMENT</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -488,16 +494,15 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('ent3', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('ent3', 'ent2')">Page Up</a>
-                <a>Page Down</a>
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="green"></div> <a onclick="toPage('ent3', 'ent2')">Page Up</a>
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <!--Channel Guide -> Movies-->
         <section class="menulisting" id="movies">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">MOVIES</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -584,14 +589,14 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('movies', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('movies', 'mov2')">Page Down</a>
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="green"></div> <a onclick="toPage('movies', 'mov2')">Page Down</a>
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <section class="menulisting" id="mov2">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">MOVIES</div>
             <div class="guidelisting">
                 <li>
@@ -678,16 +683,15 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('mov2', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('mov2', 'movies')">Page Up</a>
-                <a onclick="toPage('mov2', 'mov3')">Page Down</a>
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="green"></div> <a onclick="toPage('mov2', 'movies')">Page Up</a>
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <!--Channel Guide -> Kids-->
         <section class="menulisting" id="kids">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">KIDS</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -774,14 +778,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('kids', 'main')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a>Page Down</a>
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <section class="menulisting" id="radio">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">RADIO</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -838,12 +841,12 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('radio', 'more')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('radio', 'radio2')">Page Down</a>
+            <div class="tvlinks">
+                <div class="red"></div><a onclick="toPage('radio', 'radio2')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="radio2">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">RADIO</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -900,13 +903,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('radio2', 'more')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('radio2', 'radio')">Page Up</a>
-                <a onclick="toPage('radio2', 'radio3')">Page Down</a>
+            <div class="tvlinks">
+                <div class="red"></div> <a onclick="toPage('radio2', 'radio')">Page Up</a>
+                <div class="green"></div> <a onclick="toPage('radio2', 'radio3')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="radio3">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">RADIO</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -963,13 +966,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('radio3', 'more')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('radio3', 'radio2')">Page Up</a>
-                <a onclick="toPage('radio3', 'radio4')">Page Down</a>
+            <div class="tvlinks">
+                <div class="red"></div> <a onclick="toPage('radio3', 'radio2')">Page Up</a>
+                <div class="green"></div> <a onclick="toPage('radio3', 'radio4')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="radio4">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">RADIO</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -1026,13 +1029,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('radio4', 'more')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('radio4', 'radio3')">Page Up</a>
-                <a onclick="toPage('radio4', 'radio5')">Page Down</a>
+            <div class="tvlinks">
+                <div class="red"></div> <a onclick="toPage('radio4', 'radio3')">Page Up</a>
+                <div class="green"></div> <a onclick="toPage('radio4', 'radio5')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="radio5">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">RADIO</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -1089,13 +1092,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('radio5', 'more')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('radio5', 'radio4')">Page Up</a>
-                <a onclick="toPage('radio5', 'radio6')">Page Down</a>
+            <div class="tvlinks">
+                <div class="red"></div> <a onclick="toPage('radio5', 'radio4')">Page Up</a>
+                <div class="green"></div> <a onclick="toPage('radio5', 'radio6')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="radio6">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">RADIO</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -1127,13 +1130,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('radio6', 'more')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('radio6', 'radio5')">Page Up</a>
+            <div class="tvlinks">
+                <div class="red"></div> <a onclick="toPage('radio6', 'radio5')">Page Up</a>
             </div>
         </section>
         <!--Channel Guide -> Adult-->
         <section class="menulisting" id="adult">
-            <div class="time" id="datetime"></div>
+            <div class="time"></div>
             <div class="titles">ADULT</div>
             <div class="guidelisting">
                 <li class="nonum">
@@ -1196,9 +1199,9 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('adult', 'more')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a>+24 hours</a>
-                <a>-24 hours</a>
+            <div class="tvlinks">
+                <div class="yellow"></div> <a>+24 hours</a>
+                <div class="blue"></div> <a>—24 hours</a>
             </div>
         </section>
         <!--Box Office-->
@@ -1232,11 +1235,12 @@
                 ADULT MOVIES
             </li>
             <div class="links">
-                <a onclick="toPage('boxoffice', 'main')">Go Left</a>
-                <a onclick="toPage('boxoffice', 'services')">Go Right</a>
+                <div class="yellow"></div> <a onclick="toPage('boxoffice', 'main')">Go Left</a>
+                <div class="blue"></div> <a onclick="toPage('boxoffice', 'services')">Go Right</a>
             </div>
         </section>
         <section class="menulisting" id="pantiesoffmateinnit">
+            <div class="time"></div>
             <div class="titles">ADULT PAY-PER-NIGHT</div>
             <li class="nonum" onclick="window.location.href = 'https://www.youtube.com/watch?v=fORaTSqnmiE'">
                 <div class="prgm">Lovely Drink Milkshakes!</div>
@@ -1304,11 +1308,12 @@
             </li>
             </div>
             <div class="links">
-                <a onclick="toPage('services', 'boxoffice')">Go Left</a>
-                <a onclick="toPage('services', 'interactive')">Go Right</a>
+                <div class="yellow"></div> <a onclick="toPage('services', 'boxoffice')">Go Left</a>
+                <div class="blue"></div> <a onclick="toPage('services', 'interactive')">Go Right</a>
             </div>
         </section>
         <section class="menulisting" id="skybox">
+            <div class="time"></div>
             <div class="titles">USING YOUR SKY BOX</div>
             <div class="ltb">
                 <header>
@@ -1330,6 +1335,7 @@
             </div>
         </section>
         <section class="menulisting" id="telephonenumbers">
+            <div class="time"></div>
             <div class="titles">TELEPHONE NUMBERS</div>
             <li style="width: 150%; display: flex" class="nonum">
                 Adult Channel
@@ -1376,11 +1382,12 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('telephonenumbers', 'services')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
+            <div class="tvlinks">
                 <a onclick="toPage('telephonenumbers', 'phone2')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="phone2">
+            <div class="time"></div>
             <div class="titles">TELEPHONE NUMBERS</div>
             <li style="width: 150%; display: flex" class="nonum">
                 CinéMoi movies
@@ -1427,12 +1434,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('phone2', 'services')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
-                <a onclick="toPage('phone2', 'telephonenumbers')">Page Up</a>
-                <a onclick="toPage('phone2', 'phone3')">Page Down</a>
+            <div class="tvlinks">
+                <div class="red"></div> <a onclick="toPage('phone2', 'telephonenumbers')">Page Up</a>
+                <div class="green"></div> <a onclick="toPage('phone2', 'phone3')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="phone3">
+            <div class="time"></div>
             <div class="titles">TELEPHONE NUMBERS</div>
             <li style="width: 150%; display: flex" class="nonum">
                 Ideal World
@@ -1479,12 +1487,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('phone3', 'services')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
+            <div class="tvlinks">
                 <a onclick="toPage('phone3', 'phone2')">Page Up</a>
                 <a onclick="toPage('phone3', 'phone4')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="phone4">
+            <div class="time"></div>
             <div class="titles">TELEPHONE NUMBERS</div>
             <li style="width: 150%; display: flex" class="nonum">
                 Sky Box Office Movies
@@ -1531,12 +1540,13 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('phone4', 'services')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
+            <div class="tvlinks">
                 <a onclick="toPage('phone4', 'phone3')">Page Up</a>
                 <a onclick="toPage('phone4', 'phone5')">Page Down</a>
             </div>
         </section>
         <section class="menulisting" id="phone5">
+            <div class="time"></div>
             <div class="titles">TELEPHONE NUMBERS</div>
             <li style="width: 150%; display: flex" class="nonum">
                 Top Shelf TV
@@ -1571,11 +1581,12 @@
                 <a style="background-color: yellow; color: black" onclick="toPage('phone5', 'services')">BACK UP</a>
                 <a>to return</a>
             </div>
-            <div class="links">
+            <div class="tvlinks">
                 <a onclick="toPage('phone5', 'phone4')">Page Up</a>
             </div>
         </section>
         <section class="menulisting" id="systemtest">
+            <div class="time"></div>
             <div class="titles">SYSTEM TEST</div>
             <div class="fyi" id="systemtestfyi">
                 <header>
@@ -1592,6 +1603,7 @@
             </div>
         </section>
         <section class="menulisting" id="systemsetup">
+            <div class="time"></div>
             <div class="titles">SYSTEM SETUP</div>
             <li onclick="toPage('systemsetup', 'systemdetails')">
                 <div class="num">1</div>
@@ -1616,6 +1628,7 @@
             </div>
         </section>
         <section class="menulisting" id="systemdetails">
+            <div class="time"></div>
             <div class="titles">SYSTEM DETAILS</div>
             <div class="detailslisting">
                 <li class="nonum">
@@ -1670,7 +1683,7 @@
                     EPG Software Version
                 </li>
                 <li style="width: 100%; color: gray" class="nonum">
-                    5.10xm
+                    5.11xm
                 </li>
             </div>
             <div class="back">
@@ -1680,6 +1693,7 @@
             </div>
         </section>
         <section class="menulisting" id="healthcheck">
+            <div class="time"></div>
             <div class="titles">SYSTEM HEALTH CHECK</div>
             <div class="detailslisting">
                 <li class="nonum">
@@ -1736,7 +1750,7 @@
             </div>
         </section>
         <section class="menulisting" id="otherchannels">
-            <div class="time" id="dateimte"></div>
+            <div class="time"></div>
             <div class="titles">OTHER CHANNELS</div>
             <div class="guidelisting" onclick="window.location.href = 'https://brysonrecords.bandcamp.com/album/sky-web-epg'">
                 <li class="nonum">
@@ -1823,7 +1837,7 @@
             <div class="links">
                 <a onclick="toPage('interactive', 'services')">Go Left</a>
             </div>
-        </section>
+        </section>        
         <section class="menulisting" id="interactive2">
             <li onclick="/* triggerFYI(testmessage); */ toPage('interactive2', 'fyi')">
                 <div class="num">1</div>
@@ -1858,7 +1872,7 @@
                 Xmas Music
             </li>
             <li onclick="toPage('interactive2', 'interactive3')">
-                <div class="num">5</div>
+                <div class="num">6</div>
                 MORE...
             </li>
             <div class="back">
@@ -1867,7 +1881,7 @@
                 <a>to return</a>
             </div>
             <div class="links">
-                <a onclick="toPage('interactive2', 'services')">Go Left</a>
+                <div class="blue"></div> <a onclick="toPage('interactive2', 'services')">Go Left</a>
             </div>
         </section>
         <section class="menulisting" id="interactive3">
@@ -1888,7 +1902,7 @@
                 for FREE!
             </li>
             <li onclick="playVideo('testing')">
-                <div class="num">4</div>
+                <div class="num">1</div>
                 SAS Banner Video Player
             </li>
             <div class="back">
@@ -1897,7 +1911,7 @@
                 <a>to return</a>
             </div>
             <div class="links">
-                <a onclick="toPage('interactive3', 'services')">Go Left</a>
+                <div class="blue"></div> <a onclick="toPage('interactive3', 'services')">Go Left</a>
             </div>
         </section>
         <!--FYI-->
