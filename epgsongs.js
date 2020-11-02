@@ -3,7 +3,7 @@ const playlist = [{
     times: [0, 1, 2, 3, 4, 5],
     songs: ["https://stream.zeno.fm/et8ras3bf2zuv"]
 },
-    {
+{
         name: 'morning',
         times: [6, 7, 8, 9],
         songs: ["https://stream.zeno.fm/7rgndyacf2zuv"]
@@ -17,12 +17,12 @@ const playlist = [{
     name: 'daytime',
     times: [11, 12, 13, 14, 15],
     songs: ["https://stream.zeno.fm/bwens44bf2zuv"]
-    },
-    {
-        name: 'sunset',
-        times: [16, 17, 18],
-        songs: ["https://stream.zeno.fm/nge0aca44d0uv"],
-    },
+},
+{
+    name: 'sunset',
+    times: [16, 17, 18],
+    songs: ["https://stream.zeno.fm/nge0aca44d0uv"],
+},
 {
     name: 'nightclub',
     times: [21, 22, 23],
