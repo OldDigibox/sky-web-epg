@@ -117,7 +117,7 @@ function toPage(frompage, topage) {
             $('main').addClass('bground2');
             break;
         case 'boffice':
-            $('main').addClass('bground2');
+            $('main').addClass('boxoffice');
             break;
         case 'pantiesoffmateinnit': // Don't ask
             $('main').addClass('bground2');
