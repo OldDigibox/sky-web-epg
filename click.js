@@ -140,6 +140,21 @@ function toPage(frompage, topage) {
         case 'mov2':
             $('main').addClass('bground2');
             break;
+        case 'starttime':
+            $('main').addClass('bground2');
+            break;
+        case 'newmovs':
+            $('main').addClass('bground2');
+            break;
+        case 'sportevents':
+            $('main').addClass('bground2');
+            break;
+        case 'previews':
+            $('main').addClass('bground2');
+            break;
+        case 'adultfilms':
+            $('main').addClass('bground2');
+            break;
     }
 }
 
