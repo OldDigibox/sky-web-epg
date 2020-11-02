@@ -155,6 +155,9 @@ function toPage(frompage, topage) {
         case 'adultfilms':
             $('main').addClass('bground2');
             break;
+        case 'bofficeaz':
+            $('main').addClass('bground2');
+            break;
     }
 }
 
