@@ -1418,25 +1418,40 @@
         <section class="menulisting" id="services">
             <li onclick="toPage('services', 'skybox')">
                 <div class="num">1</div>
-                USING YOUR SKY BOX
+                USING SKY+
             </li>
             <li onclick="toPage('services', 'telephonenumbers')">
                 <div class="num">2</div>
                 TELEPHONE NUMBERS
             </li>
-            <li onclick="toPage('services', 'systemsetup')">
+            <li onclick="toPage ('services', 'parents')">
                 <div class="num">3</div>
+                PARENTAL CONTROL
+            </li>
+            <li onclick="toPage('services', 'systemsetup')">
+                <div class="num">4</div>
                 SYSTEM SETUP
             </li>
+            <li onclick="toPage('services', 'skyplus')">
+                <div class="num">5</div>
+                SKY+ SETUP
+            </li>
+            <li onclick="toPage('services', 'standby')">
+                <div class="num">6</div>
+                AUTO STANDBY
+            </li>
+            <li onclick="toPage('services', 'manrec')">
+                <div class="num">7</div>
+                MANUAL RECORDING
+            </li>
             <li>
-                <div class="num">4</div>
+                <div class="num">8</div>
                 FAVOURITE CHANNELS
             </li>
             <li onclick="toPage('services', 'otherchannels')">
-                <div class="num">5</div>
+                <div class="num">9</div>
                 OTHER CHANNELS
             </li>
-            </div>
             <div class="links">
                 <div class="yellow"></div> <a onclick="toPage('services', 'boxoffice')">Go Left</a>
                 <div class="blue"></div> <a onclick="toPage('services', 'interactive')">Go Right</a>
@@ -1444,18 +1459,18 @@
         </section>
         <section class="menulisting" id="skybox">
             <div class="time"></div>
-            <div class="titles">USING YOUR SKY BOX</div>
+            <div class="titles">USING YOUR SKY+ BOX</div>
             <div class="ltb">
                 <header>
                     HELP INFORMATION
                 </header>
                 <main>
-                    ■ For information on recent changes refer to Sky magazine or channel 999 <br />
-                    ■ Press 'tv guide' to find out what's on over the next seven days<br />
-                    ■ To set a Reminder, Autoview or Series Link, highlight a future programme and press 'select'<br />
-                    ■ Press 'box office' to see what's on and to order an event<br />
-                    ■ To set up Parental Control press 'services' and choose '3'<br />
-                    ■ For any problems or for more information refer to the 'Using Your Sky Box' booklet
+                    — For information on recent changes refer to Sky magazine or channel 999 <br />
+                    — To find a programme press 'tv guide', then choose the category you need. <br />
+                    — Press 'Box Office' to see what's on and to order an event <br />
+                    — To record a programme press Record instead of Select <br />
+                    — For further information please refer to the 'Using Sky+' booklet <br />
+                    — Press 'Sky' any time to return immediately to TV viewing <br />
                 </main>
             </div>
             <div class="back">
@@ -1472,7 +1487,7 @@
                 <div class="tele">0844 8429 669</div>
             </li>
             <li style="width: 150%; display: flex" class="nonum">
-                Adult Channel (pay per night)
+                Adult Channel (pay pal night)
                 <div class="tele">0844 411770</div>
             </li>
             <li style="width: 150%; display: flex" class="nonum">
@@ -1715,6 +1730,101 @@
                 <div class="red"></div> <a onclick="toPage('phone5', 'phone4')">Page Up</a>
             </div>
         </section>
+        <section class="menulisting" id="parents">
+            <div class="time"></div>
+            <div class="titles">PARENTAL CONTROL</div>
+            <li onclick="toPage('parents', 'changepin')">
+                <div class="num">1</div>
+                CHANGE PIN
+            </li>
+            <li onclick="toPage('parents', 'adultpar')">
+                <div class="num">2</div>
+                ADULT CHANNELS
+            </li>
+            <li onclick="toPage('parents', 'viewres')">
+                <div class="num">3</div>
+                VIEWING RESTRICTIONS
+            </li>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('parents','services')">BACK UP</a>
+                <a>to return</a>
+            </div>
+            <div class="links" style="text-align: left">
+                <div class="red"></div> <a>PIN Restrictions On/Off</a>
+            </div>
+        </section>
+        <section class="menulisting" id="changepin">
+            <div class="time"></div>
+            <div class="titles">CHANGE PIN</div>
+            <div class="fyi">
+                <header>
+                    NEW PIN
+                </header>
+                <main>
+                    Call 08702 404040 to change the PIN
+                </main>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('changepin', 'parents')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
+        <section class="menulisting" id="adultpar">
+            <div class="time"></div>
+            <div class="titles">ADULT CHANNELS</div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Remove Adult Channels
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('adultpar', 'parents')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Save New Settings
+                </li>
+            </div>
+        </section>
+        <section class="menulisting" id="viewres">
+            <div class="time"></div>
+            <div class="titles">VIEWING RESTRICTIONS</div>
+            <div class="guidelisting">
+                <li class="other" style="width: 50%; padding-left: 5px">
+                    Universal (U)
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li class="other" style="width: 50%; padding-left: 5px">
+                    Parental Guidance (PG)
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li class="other" style="width: 50%; padding-left: 5px">
+                    12 Years or Over (12)
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li class="other" style="width: 50%; padding-left: 5px">
+                    15 Years or Over (15)
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li class="other" style="width: 50%; padding-left: 5px">
+                    Adult Viewing (18)
+                </li>
+            </div>
+            <div class="back">
+                <a>Restrict categories and press</a>
+                <a style="color: black; background-color: yellow" onclick="toPage('viewres', 'parents')">SELECT</a>
+                <a>when complete</a>
+            </div>
+            <div class="links">
+                <div class="red"></div> <a>Restrict/Unrestrict</a>
+            </div>
+        </section>
         <section class="menulisting" id="systemtest">
             <div class="time"></div>
             <div class="titles">SYSTEM TEST</div>
@@ -1735,20 +1845,36 @@
         <section class="menulisting" id="systemsetup">
             <div class="time"></div>
             <div class="titles">SYSTEM SETUP</div>
-            <li onclick="toPage('systemsetup', 'systemdetails')">
+            <li onclick="toPage('systemsetup', 'picture')">
                 <div class="num">1</div>
+                PICTURE SETTINGS
+            </li>
+            <li onclick="toPage('systemsetup', 'sound')">
+                <div class="num">2</div>
+                SOUND SETTINGS
+            </li>
+            <li onclick="toPage('systemsetup', 'lang')">
+                <div class="num">3</div>
+                LANGUAGE & SUBTITLES
+            </li>
+            <li onclick="toPage('systemsetup', 'addchannels')">
+                <div class="num">4</div>
+                ADD CHANNELS
+            </li>
+            <li onclick="toPage('systemsetup', 'systemdetails')">
+                <div class="num">5</div>
                 SYSTEM DETAILS
             </li>
-            <li>
-                <div class="num">2</div>
+            <li onclick="toPage('systemsetup', 'signaltest')">
+                <div class="num">6</div>
                 SIGNAL TEST
             </li>
             <li onclick="toPage('systemsetup', 'systemtest')">
-                <div class="num">3</div>
+                <div class="num">7</div>
                 SYSTEM TEST
             </li>
             <li onclick="toPage('systemsetup', 'healthcheck')">
-                <div class="num">4</div>
+                <div class="num">8</div>
                 SYSTEM HEALTH CHECK
             </li>
             <div class="back">
@@ -1822,6 +1948,303 @@
                 <a>to return</a>
             </div>
         </section>
+        <section class="menulisting" id="picture">
+            <div class="time"></div>
+            <div class="titles">PICTURE SETTINGS</div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Picture Format
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    4:3L
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Second Location Picture Format
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    4:3L
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Scart Control
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Video Output
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    HD
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Contrast
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    MEDIUM
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Search & Scan Banner Timeout
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    5 SECONDS
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    On-Screen Icon Timeout
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Message Alert
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('picture', 'systemsetup')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Save New Settings
+                </li>
+            </div>
+            <div class="links">
+                <div class="red"></div> <a>Reset all settings</a>
+            </div>
+        </section>
+        <section class="menulisting" id="sound">
+            <div class="time"></div>
+            <div class="titles">SOUND SETTINGS</div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Audio Output
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    STEREO
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Volume
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    DEVICE
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Optical Output
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    NORMAL
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Background Music
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    ON
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Beep On Error
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('sound', 'systemsetup')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Save New Settings
+                </li>
+            </div>
+            <div class="links">
+                <div class="red"></div> <a>Reset all settings</a>
+            </div>
+        </section>
+        <section class="menulisting" id="lang">
+            <div class="time"></div>
+            <div class="titles">LANGUAGE & SUBTITLES</div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Subtitles
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Audio Description
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Favourite Language
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    ENGLISH
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Highlighted Programmes
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Beep on Audio Description
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('lang', 'systemsetup')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Save New Settings
+                </li>
+            </div>
+            <div class="links">
+                <div class="red"></div> <a>Reset all settings</a>
+            </div>
+        </section>
+        <section class="menulisting" id="addchannels">
+            <div class="time"></div>
+            <div class="titles">ADD CHANNELS</div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Frequency (GHz)
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    11.778
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Polarisation
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    V
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Symbol Rate (Mbaud)
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    27.5
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    FEC
+                </li>
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
+                    2/3
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('addchannels', 'otherchannels')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Find Channels
+                </li>
+            </div>
+            <div class="links">
+                <div class="red"></div> <a>Reset Symbol Rate & FEC settings</a>
+            </div>
+        </section>
+        <section class="menulisting" id="signaltest">
+            <div class="time"></div>
+            <div class="titles">SIGNAL TEST</div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 1 Signal Strength
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    87%
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 1 Signal Quality
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    95%
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 1 Lock Indicator
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    OK
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 1 Network ID
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    0002
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 1 Transport Stream
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    07d4
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 2 Signal Strength
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    90%
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 2 Signal Quality
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    100%
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
+                    Input 2 Lock Indicator
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    OK
+                </li>
+            </div>
+            <div class="back">
+                <a>Press</a>
+                <a style="background-color: yellow; color: black" onclick="toPage('signaltest', 'systemsetup')">BACK UP</a>
+                <a>to return</a>
+            </div>
+        </section>
         <section class="menulisting" id="healthcheck">
             <div class="time"></div>
             <div class="titles">SYSTEM HEALTH CHECK</div>
@@ -1859,6 +2282,14 @@
             </div>
             <div class="detailslisting">
                 <li class="nonum">
+                    Input 2
+                </li>
+                <li style="width: 100%; color: gray" class="nonum">
+                    — — —
+                </li>
+            </div>
+            <div class="detailslisting">
+                <li class="nonum">
                     Telephone Line Status
                 </li>
                 <li style="width: 100%; color: gray" class="nonum">
@@ -1879,36 +2310,163 @@
                 <a>to return</a>
             </div>
         </section>
+        <section class="menulisting" id="skyplus">
+            <div class="time"></div>
+            <div class="titles">SKY+ SETUP</div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Disk Space Management
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    WARNING
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Instant Rewind
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    60 MINS
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Add to Start of Recording
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    AUTOMATIC
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Add to End of Recording
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    AUTOMATIC
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Front Panel Indicator
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    STANDARD
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('skyplus', 'services')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Save New Settings
+                </li>
+            </div>
+            <div class="links">
+                <div class="red"></div> <a>Reset all settings</a>
+            </div>
+        </section>
+        <section class="menulisting" id="standby">
+            <div class="time"></div>
+            <div class="titles">AUTO STANDBY</div>
+            <p>Use the options below to make sure your box goes<br />into Standby Mode after a period of inactivity</p>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Enable Auto Standby
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    OFF
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('standby', 'services')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Save New Settings
+                </li>
+            </div>
+        </section>
+        <section class="menulisting" id="manrec">
+            <div class="time"></div>
+            <div class="titles">MANUAL RECORDING</div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Channel Number
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    0214
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Channel Name
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    UCB Ireland
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Day
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    TODAY
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Start Time
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    ——:——PM
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    End Time
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    ——:——PM
+                </li>
+            </div>
+            <div class="guidelisting">
+                <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    Frequency
+                </li>
+                <li style="text-align: center; width: 250%; font-family: ZurichBT; padding-left: 5px">
+                    ONCE
+                </li>
+            </div>
+            <div class="guidelising" style="text-align: left; align-self: baseline" onclick="toPage ('manrec', 'planner')">
+                <li style="font-family: ZurichBT; padding-left: 5px">
+                    Add Manual Recording
+                </li>
+            </div>
+        </section>
         <section class="menulisting" id="otherchannels">
             <div class="time"></div>
             <div class="titles">OTHER CHANNELS</div>
             <div class="guidelisting" onclick="window.location.href = 'https://brysonrecords.bandcamp.com/album/sky-web-epg'">
-                <li class="nonum">
+                <li class="other" style="width: 50%">
                     🔈   EPG Background Audio.
                 </li>
             </div>
             <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCSf3jsDT5AxHeGxBZ5YEiwQ'">
-                <li class="nonum">
+                <li class="other" style="width: 50%">
                     Chelmsford IT
                 </li>
             </div>
             <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCIFzRjg4GM00nRVrNFrOb1g'">
-                <li class="nonum">
+                <li class="other" style="width: 50%">
                     II.Super_Legendary.II (ISLI)
                 </li>
             </div>
             <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCPUMaLT4zej0fSHiity3P5w'">
-                <li class="nonum">
+                <li class="other" style="width: 50%">
                     Betty Macaulay
                 </li>
             </div>
             <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCXFM2yYtQ3NmMcD33OFZQKg'">
-                <li class="nonum">
+                <li class="other" style="width: 50%">
                     OldDigibox
                 </li>
             </div>
             <div class="guidelisting" onclick="window.location.href = 'https://www.youtube.com/channel/UCumdQGQazskCznTlAchiOjQ'">
-                <li class="nonum">
+                <li class="other" style="width: 50%">
                     Sky Archive
                 </li>
             </div>
@@ -1972,6 +2530,10 @@
             <li onclick="toPage('interactive2', 'sastest')">
                 <div class="num">2</div>
                 Search & Scan Test
+            </li>
+            <li onclick="toPage('interactive2', 'devtest')">
+                <div class="num">3</div>
+                Developer Test
             </li>
             <li>
                 <div class="num"></div>
@@ -2223,6 +2785,11 @@
                 <a onclick="toPage('planner', 'main')" style="color: black; background-color: yellow">BACK UP</a>
                 <a>to return</a>
             </div>
+        </section>
+        <section class="menulisting" id="devtest">
+            <a>Press</a>
+            <a id="circle">R</a>
+            <a>to record</a>
         </section>
     </main>
     <!--<audio id="player" allow="autoplay" autoplay>

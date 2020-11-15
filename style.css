@@ -62,6 +62,13 @@ main {
     justify-content: center;
 }
 
+p {
+    font-family: ZurichTV;
+    font-size: 1.5rem;
+    color: var(--sub-colour);
+    text-align: left;
+}
+
 .menulisting[id] {
     display: none;
 }
@@ -294,6 +301,12 @@ li .tele {
     align-content: safe center;
 }
 
+    /*.guidelisting:hover {
+    color: var(--font-colour-hover);
+    background-color: var(--main-colour-hover);
+}
+    */
+
     .guidelisting li {
         font-family: 'ZurichTV';
         margin: 4px;
@@ -388,6 +401,7 @@ li {
         background: var(--main-colour);
         color: var(--font-colour);
         font-size: 1.6rem;
+        font-family: ZurichBT;
         width: 150%;
         display: flex;
         align-items: center;
@@ -439,16 +453,23 @@ li {
 /* Large Text Box */
 
 .ltb {
-    width: 150%;
+    width: 130%;
     height: 100%;
+    margin: 0 0 0 0 ;
     display: flex;
+    position: sticky;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+#darker:hover {
+    color: var(--font-colour-hover);
+    background-color: rgb(216, 178, 5);
+}
     .ltb header {
-        width: 100%;
+        padding-left: 30px;
+        width: 97%;
         height: 31.5px;
         background: var(--main-colour-hover);
         list-style-type: none;
@@ -458,17 +479,24 @@ li {
     }
 
     .ltb main {
+        padding-left: 10px;
         min-height: 150px;
-        height: auto;
         background: var(--main-colour);
         color: var(--font-colour);
-        font-size: 1.6rem;
+        font-size: 1.7rem;
+        font-family: ZurichTV;
         width: 100%;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        line-height: 40px;
     }
 
+
+.other li {
+    width: 50%;
+    text-align: left;
+    justify-content: left;
+    padding-left: 5px;
+}
 
 #planner li {
     font-family: 'ZurichTV';
@@ -522,6 +550,16 @@ li {
     padding: 0px 5px;
     height: 100%;
 }
+
+#circle {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+}
+  
 
 #previews li {
     font-family: 'ZurichTV';
@@ -718,4 +756,12 @@ li {
     font-style: normal;
     font-weight: normal;
     src: local('Helvetica 65 Medium Regular'), url('Helvetica65Medium_22443.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'ZurichBT';
+    src: url('ZurichBT-Bold.woff2') format('woff2'), url('ZurichBT-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }

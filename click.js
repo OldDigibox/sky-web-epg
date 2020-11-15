@@ -158,6 +158,45 @@ function toPage(frompage, topage) {
         case 'bofficeaz':
             $('main').addClass('bground2');
             break;
+        case 'devtest':
+            $('main').addClass('bground2');
+            break;
+        case 'parents':
+            $('main').addClass('bground2');
+            break;
+        case 'changepin':
+            $('main').addClass('bground2');
+            break;
+        case 'adultpar':
+            $('main').addClass('bground2');
+            break;
+        case 'viewres':
+            $('main').addClass('bground2');
+            break;
+        case 'picture':
+            $('main').addClass('bground2');
+            break;
+        case 'sound':
+            $('main').addClass('bground2');
+            break;
+            case 'lang':
+            $('main').addClass('bground2');
+            break;
+            case 'signaltest':
+            $('main').addClass('bground2');
+            break;
+                        case 'skyplus':
+            $('main').addClass('bground2');
+            break;
+                        case 'addchannels':
+            $('main').addClass('bground2');
+            break;
+                                    case 'standby':
+            $('main').addClass('bground2');
+            break;
+                                                case 'manrec':
+            $('main').addClass('bground2');
+            break;
     }
 }
 
