@@ -1,9 +1,9 @@
-$(document).ready(function() {
-   $(".player video").hover(function() {
-       $("#sastest").css("display","flex");
-    }, function() {
+$(document).ready(function () {
+    $(".player video").hover(function () {
+        $("#sastest").css("display", "flex");
+    }, function () {
         wait(5000)
-        $("#sastest").css("display","none");
+        $("#sastest").css("display", "none");
     });
 });
 
@@ -117,7 +117,7 @@ function toPage(frompage, topage) {
             $('main').addClass('bground2');
             break;
         case 'boffice':
-            $('main').addClass('bground2');
+            $('main').addClass('boxoffice');
             break;
         case 'pantiesoffmateinnit': // Don't ask
             $('main').addClass('bground2');
@@ -137,8 +137,67 @@ function toPage(frompage, topage) {
         case 'phone5':
             $('main').addClass('bground2');
             break;
+        case 'mov2':
+            $('main').addClass('bground2');
+            break;
+        case 'starttime':
+            $('main').addClass('bground2');
+            break;
+        case 'newmovs':
+            $('main').addClass('bground2');
+            break;
+        case 'sportevents':
+            $('main').addClass('bground2');
+            break;
+        case 'previews':
+            $('main').addClass('bground2');
+            break;
+        case 'adultfilms':
+            $('main').addClass('bground2');
+            break;
+        case 'bofficeaz':
+            $('main').addClass('bground2');
+            break;
+        case 'devtest':
+            $('main').addClass('bground2');
+            break;
+        case 'parents':
+            $('main').addClass('bground2');
+            break;
+        case 'changepin':
+            $('main').addClass('bground2');
+            break;
+        case 'adultpar':
+            $('main').addClass('bground2');
+            break;
+        case 'viewres':
+            $('main').addClass('bground2');
+            break;
+        case 'picture':
+            $('main').addClass('bground2');
+            break;
+        case 'sound':
+            $('main').addClass('bground2');
+            break;
+        case 'lang':
+            $('main').addClass('bground2');
+            break;
+        case 'signaltest':
+            $('main').addClass('bground2');
+            break;
+        case 'skyplus':
+            $('main').addClass('bground2');
+            break;
+        case 'addchannels':
+            $('main').addClass('bground2');
+            break;
+        case 'standby':
+            $('main').addClass('bground2');
+            break;
+        case 'manrec':
+            $('main').addClass('bground2');
+            break;
     }
-
 }
 
 function playVideo(name) {
@@ -148,7 +207,7 @@ function playVideo(name) {
 
 function wait(ms) {
     var start = new Date().getTime();
-    var end= start;
+    var end = start;
     while (end < start + ms) {
         end = new Date().getTime();
     }
