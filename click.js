@@ -197,6 +197,9 @@ function toPage(frompage, topage) {
                                                 case 'manrec':
             $('main').addClass('bground2');
             break;
+        case 'basic':
+            $('main').addClass('blueground');
+            break;
     }
 }
 

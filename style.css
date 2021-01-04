@@ -38,6 +38,10 @@
     background-image: url('https://media.discordapp.net/attachments/771452339541770303/771456702901125190/interactive.png')
 }
 
+.blueground {
+    background: var(--main-colour);
+}
+
 body {
     display: flex;
     align-items: center;
@@ -470,12 +474,12 @@ li {
     }
 
     .comingsoon main {
-        min-height: 150px;
+        min-height: 120px;
         height: auto;
         background: var(--sub-colour);
         color: var(--font-colour);
         font-size: 1.6rem;
-        font-family: ZurichBT;
+        font-family: Zurich;
         width: 150%;
         display: flex;
         align-items: center;
@@ -490,6 +494,7 @@ li {
         color: white;
         text-align: center;
         font-size: 1.6rem;
+        font-family: ZurichTV;
     }
 
 /* Large Text Box */
