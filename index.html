@@ -30,8 +30,8 @@
 </head>
 <body>
     <main>
-        <iframe allow="autoplay" style="display:none" id="player" type="audio/mpeg">
-        </iframe>
+        <!---<iframe allow="autoplay" style="display:none" id="player" type="audio/mpeg">
+    </iframe>-->
         <!--Landing Page-->
         <section class="menulisting" id="main">
             <li onclick="toPage('main', 'guide')">
@@ -2054,8 +2054,8 @@
                 <li id="darker" style="width: 250%; font-family: ZurichBT; padding-left: 5px">
                     Background Music
                 </li>
-                <li style="text-align: center; font-family: Zurich; padding-left: 5px">
-                    ON
+                <li style="text-align: center; font-family: Zurich; padding-left: 5px" id="player" onclick="player.play">
+                    Click here
                 </li>
             </div>
             <div class="guidelisting">
@@ -2803,7 +2803,7 @@
                     Sky Active
                 </main>
                 <footer>
-                Manage your Sky Account. Get Help. Search TV.
+                    Manage your Sky Account. Get Help. Search TV.
                 </footer>
             </div>
         </section>

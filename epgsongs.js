@@ -4,9 +4,9 @@ const playlist = [{
     songs: ["https://stream.zeno.fm/et8ras3bf2zuv"]
 },
 {
-        name: 'morning',
-        times: [6, 7, 8, 9, 10, 11],
-        songs: ["https://stream.zeno.fm/7rgndyacf2zuv"]
+    name: 'morning',
+    times: [6, 7, 8, 9, 10, 11],
+    songs: ["https://stream.zeno.fm/7rgndyacf2zuv"]
 },
 {
     name: 'primetime',
