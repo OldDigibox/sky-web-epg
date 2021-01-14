@@ -1,9 +1,9 @@
-$(document).ready(function () {
-    $(".player video").hover(function () {
-        $("#sastest").css("display", "flex");
-    }, function () {
+$(document).ready(function() {
+   $(".player video").hover(function() {
+       $("#sastest").css("display","flex");
+    }, function() {
         wait(5000)
-        $("#sastest").css("display", "none");
+        $("#sastest").css("display","none");
     });
 });
 
@@ -13,392 +13,193 @@ function toPage(frompage, topage) {
 
     $('main').removeClass();
 
-    if (useDefaultTheme() == true) {
-        switch (topage) {
-
-            case 'main':
-                $('main').addClass('bground1');
-                break;
-            case 'more':
-                $('main').addClass('bground1');
-                break;
-            case 'guide':
-                $('main').addClass('bground2');
-                break;
-            case 'custom':
-                $('main').addClass('bground1');
-                break;
-            case 'adult':
-                $('main').addClass('bground2');
-                break;
-            case 'entertainment':
-                $('main').addClass('bground2');
-                break;
-            case 'boxoffice':
-                $('main').addClass('boxoffice');
-                break;
-            case 'services':
-                $('main').addClass('services');
-                break;
-            case 'interactive':
-                $('main').addClass('interactive');
-                break;
-            case 'systemsetup':
-                $('main').addClass('bground2');
-                break;
-            case 'ent2':
-                $('main').addClass('bground2');
-                break;
-            case 'ent3':
-                $('main').addClass('bground2');
-                break;
-            case 'kids':
-                $('main').addClass('bground2');
-                break;
-            case 'systemdetails':
-                $('main').addClass('bground2');
-                break;
-            case 'radio':
-                $('main').addClass('bground2');
-                break;
-            case 'otherchannels':
-                $('main').addClass('bground2');
-                break;
-            case 'radio2':
-                $('main').addClass('bground2');
-                break;
-            case 'radio3':
-                $('main').addClass('bground2');
-                break;
-            case 'radio4':
-                $('main').addClass('bground2');
-                break;
-            case 'radio5':
-                $('main').addClass('bground2');
-                break;
-            case 'radio6':
-                $('main').addClass('bground2');
-                break;
-            case 'movies':
-                $('main').addClass('bground2');
-                break;
-            case 'movies2':
-                $('main').addClass('bground2');
-                break;
-            case 'fyi':
-                $('main').addClass('bground2');
-                break;
-            case 'skybox':
-                $('main').addClass('bground2');
-                break;
-            case 'interactive2':
-                $('main').addClass('interactive');
-                break;
-            case 'sastest':
-                $('main').addClass('interactive');
-                break;
-            case 'telephonenumbers':
-                $('main').addClass('bground2');
-                break;
-            case 'interactive3':
-                $('main').addClass('interactive');
-                break;
-            case 'az':
-                $('main').addClass('bground2');
-                break;
-            case 'healthcheck':
-                $('main').addClass('bground2');
-                break;
-            case 'planner':
-                $('main').addClass('bground2');
-                break;
-            case 'azprog':
-                $('main').addClass('bground2');
-                break;
-            case 'azent':
-                $('main').addClass('bground2');
-                break;
-            case 'boffice':
-                $('main').addClass('boxoffice');
-                break;
-            case 'pantiesoffmateinnit': // Don't ask
-                $('main').addClass('bground2');
-                break;
-            case 'systemtest':
-                $('main').addClass('bground2');
-                break;
-            case 'phone2':
-                $('main').addClass('bground2');
-                break;
-            case 'phone3':
-                $('main').addClass('bground2');
-                break;
-            case 'phone4':
-                $('main').addClass('bground2');
-                break;
-            case 'phone5':
-                $('main').addClass('bground2');
-                break;
-            case 'mov2':
-                $('main').addClass('bground2');
-                break;
-            case 'starttime':
-                $('main').addClass('bground2');
-                break;
-            case 'newmovs':
-                $('main').addClass('bground2');
-                break;
-            case 'sportevents':
-                $('main').addClass('bground2');
-                break;
-            case 'previews':
-                $('main').addClass('bground2');
-                break;
-            case 'adultfilms':
-                $('main').addClass('bground2');
-                break;
-            case 'bofficeaz':
-                $('main').addClass('bground2');
-                break;
-            case 'devtest':
-                $('main').addClass('bground2');
-                break;
-            case 'parents':
-                $('main').addClass('bground2');
-                break;
-            case 'changepin':
-                $('main').addClass('bground2');
-                break;
-            case 'adultpar':
-                $('main').addClass('bground2');
-                break;
-            case 'viewres':
-                $('main').addClass('bground2');
-                break;
-            case 'picture':
-                $('main').addClass('bground2');
-                break;
-            case 'sound':
-                $('main').addClass('bground2');
-                break;
+    switch (topage) {
+        case 'main':
+            $('main').addClass('bground1');
+            break;
+        case 'more':
+            $('main').addClass('bground1');
+            break;
+        case 'guide':
+            $('main').addClass('bground2');
+            break;
+        case 'custom':
+            $('main').addClass('bground1');
+            break;
+        case 'adult':
+            $('main').addClass('bground2');
+            break;
+        case 'entertainment':
+            $('main').addClass('bground2');
+            break;
+        case 'boxoffice':
+            $('main').addClass('boxoffice');
+            break;
+        case 'services':
+            $('main').addClass('services');
+            break;
+        case 'interactive':
+            $('main').addClass('interactive');
+            break;
+        case 'systemsetup':
+            $('main').addClass('bground2');
+            break;
+        case 'ent2':
+            $('main').addClass('bground2');
+            break;
+        case 'ent3':
+            $('main').addClass('bground2');
+            break;
+        case 'kids':
+            $('main').addClass('bground2');
+            break;
+        case 'systemdetails':
+            $('main').addClass('bground2');
+            break;
+        case 'radio':
+            $('main').addClass('bground2');
+            break;
+        case 'otherchannels':
+            $('main').addClass('bground2');
+            break;
+        case 'radio2':
+            $('main').addClass('bground2');
+            break;
+        case 'radio3':
+            $('main').addClass('bground2');
+            break;
+        case 'radio4':
+            $('main').addClass('bground2');
+            break;
+        case 'radio5':
+            $('main').addClass('bground2');
+            break;
+        case 'radio6':
+            $('main').addClass('bground2');
+            break;
+        case 'movies':
+            $('main').addClass('bground2');
+            break;
+        case 'movies2':
+            $('main').addClass('bground2');
+            break;
+        case 'fyi':
+            $('main').addClass('bground2');
+            break;
+        case 'skybox':
+            $('main').addClass('bground2');
+            break;
+        case 'interactive2':
+            $('main').addClass('interactive');
+            break;
+        case 'sastest':
+            $('main').addClass('interactive');
+            break;
+        case 'telephonenumbers':
+            $('main').addClass('bground2');
+            break;
+        case 'interactive3':
+            $('main').addClass('interactive');
+            break;
+        case 'az':
+            $('main').addClass('bground2');
+            break;
+        case 'healthcheck':
+            $('main').addClass('bground2');
+            break;
+        case 'planner':
+            $('main').addClass('bground2');
+            break;
+        case 'azprog':
+            $('main').addClass('bground2');
+            break;
+        case 'azent':
+            $('main').addClass('bground2');
+            break;
+        case 'boffice':
+            $('main').addClass('boxoffice');
+            break;
+        case 'pantiesoffmateinnit': // Don't ask
+            $('main').addClass('bground2');
+            break;
+        case 'systemtest':
+            $('main').addClass('bground2');
+            break;
+        case 'phone2':
+            $('main').addClass('bground2');
+            break;
+        case 'phone3':
+            $('main').addClass('bground2');
+            break;
+        case 'phone4':
+            $('main').addClass('bground2');
+            break;
+        case 'phone5':
+            $('main').addClass('bground2');
+            break;
+        case 'mov2':
+            $('main').addClass('bground2');
+            break;
+        case 'starttime':
+            $('main').addClass('bground2');
+            break;
+        case 'newmovs':
+            $('main').addClass('bground2');
+            break;
+        case 'sportevents':
+            $('main').addClass('bground2');
+            break;
+        case 'previews':
+            $('main').addClass('bground2');
+            break;
+        case 'adultfilms':
+            $('main').addClass('bground2');
+            break;
+        case 'bofficeaz':
+            $('main').addClass('bground2');
+            break;
+        case 'devtest':
+            $('main').addClass('bground2');
+            break;
+        case 'parents':
+            $('main').addClass('bground2');
+            break;
+        case 'changepin':
+            $('main').addClass('bground2');
+            break;
+        case 'adultpar':
+            $('main').addClass('bground2');
+            break;
+        case 'viewres':
+            $('main').addClass('bground2');
+            break;
+        case 'picture':
+            $('main').addClass('bground2');
+            break;
+        case 'sound':
+            $('main').addClass('bground2');
+            break;
             case 'lang':
-                $('main').addClass('bground2');
-                break;
+            $('main').addClass('bground2');
+            break;
             case 'signaltest':
-                $('main').addClass('bground2');
-                break;
-            case 'skyplus':
-                $('main').addClass('bground2');
-                break;
-            case 'addchannels':
-                $('main').addClass('bground2');
-                break;
-            case 'standby':
-                $('main').addClass('bground2');
-                break;
-            case 'manrec':
-                $('main').addClass('bground2');
-                break;
-            case 'basic':
-                $('main').addClass('blueground');
-                break;
-            case 'themes':
-                $('main').addClass('bground2');
-                break;
-        }
-        if (useDarkTheme() == true) {
-            switch (topage) {
-                case 'main':
-                    $('main').addClass('darkbground1');
-                    break;
-                case 'more':
-                    $('main').addClass('darkbground1');
-                    break;
-                case 'guide':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'custom':
-                    $('main').addClass('darkbground1');
-                    break;
-                case 'adult':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'entertainment':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'boxoffice':
-                    $('main').addClass('boxoffice');
-                    break;
-                case 'services':
-                    $('main').addClass('services');
-                    break;
-                case 'interactive':
-                    $('main').addClass('interactive');
-                    break;
-                case 'systemsetup':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'ent2':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'ent3':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'kids':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'systemdetails':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'radio':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'otherchannels':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'radio2':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'radio3':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'radio4':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'radio5':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'radio6':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'movies':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'movies2':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'fyi':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'skybox':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'interactive2':
-                    $('main').addClass('interactive');
-                    break;
-                case 'sastest':
-                    $('main').addClass('interactive');
-                    break;
-                case 'telephonenumbers':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'interactive3':
-                    $('main').addClass('interactive');
-                    break;
-                case 'az':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'healthcheck':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'planner':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'azprog':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'azent':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'boffice':
-                    $('main').addClass('boxoffice');
-                    break;
-                case 'pantiesoffmateinnit': // Don't ask
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'systemtest':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'phone2':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'phone3':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'phone4':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'phone5':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'mov2':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'starttime':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'newmovs':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'sportevents':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'previews':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'adultfilms':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'bofficeaz':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'devtest':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'parents':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'changepin':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'adultpar':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'viewres':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'picture':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'sound':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'lang':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'signaltest':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'skyplus':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'addchannels':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'standby':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'manrec':
-                    $('main').addClass('darkbground2');
-                    break;
-                case 'basic':
-                    $('main').addClass('blueground');
-                    break;
-                case 'themes':
-                    $('main').addClass('darkbground2');
-                    break;
-            }
-        }
+            $('main').addClass('bground2');
+            break;
+                        case 'skyplus':
+            $('main').addClass('bground2');
+            break;
+                        case 'addchannels':
+            $('main').addClass('bground2');
+            break;
+                                    case 'standby':
+            $('main').addClass('bground2');
+            break;
+                                                case 'manrec':
+            $('main').addClass('bground2');
+            break;
+        case 'basic':
+            $('main').addClass('blueground');
+            break;
     }
 }
 
@@ -409,7 +210,7 @@ function playVideo(name) {
 
 function wait(ms) {
     var start = new Date().getTime();
-    var end = start;
+    var end= start;
     while (end < start + ms) {
         end = new Date().getTime();
     }

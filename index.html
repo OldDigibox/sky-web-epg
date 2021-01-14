@@ -27,7 +27,6 @@
     <meta name="theme-color" content="#ffffff">
     <title>Sky Guide</title>
     <script src="click.js"></script>
-    <script src="themes.js"></script>
 </head>
 <body>
     <main>
@@ -1877,10 +1876,6 @@
                 <div class="num">8</div>
                 SYSTEM HEALTH CHECK
             </li>
-            <li onclick="toPage('systemsetup', 'themes')">
-                <div class="num">9</div>
-                SELECT THEME
-            </li>
             <div class="back">
                 <a>Press</a>
                 <a style="background-color: yellow; color: black" onclick="toPage('systemsetup', 'services')">BACK UP</a>
@@ -2311,31 +2306,6 @@
             <div class="back">
                 <a>Press</a>
                 <a style="background-color: yellow; color: black" onclick="toPage('healthcheck', 'systemsetup')">BACK UP</a>
-                <a>to return</a>
-            </div>
-        </section>
-        <section class="menulisting" id="themes">
-            <div class="time"></div>
-            <div class="titles">SELECT THEME</div>
-            <div class="guidelisting">
-                <li onclick="useDefaultTheme()">
-                    Default Theme
-                </li>
-                <li onclick="useDarkTheme()">
-                    Dark Theme
-                </li>
-            </div>
-            <div class="guidelisting">
-                <li onclick="use1998Theme()">
-                    1998 Theme
-                </li>
-                <li onclick="use2001Theme()">
-                    2001 Theme
-                </li>
-            </div>
-            <div class="back">
-                <a>Press</a>
-                <a onclick="toPage('themes', 'systemsetup')" style="background-color: yellow; color: black">BACK UP</a>
                 <a>to return</a>
             </div>
         </section>

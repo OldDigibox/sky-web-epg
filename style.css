@@ -3,7 +3,7 @@
     font-family: 'Zurich';
 }
 
-/*:root {
+:root {
     font-size: 16px;
     --font-colour: white;
     --main-colour: rgb(0, 37, 201);
@@ -15,7 +15,7 @@
     --font-colour-hover: rgb(0, 0, 179);
     --background-image-blank: url('https://media.discordapp.net/attachments/649968233553723405/709086018942402631/image1.jpg');
     --background-image: url("img/tv_guide.png");
-}*/
+}
 
 /* Backgrounds for pages */
 .bground1 {
@@ -40,26 +40,6 @@
 
 .blueground {
     background: var(--main-colour);
-}
-
-.darkbground1 {
-    background-image: url('https://cdn.discordapp.com/attachments/771452339541770303/798870762366828554/tv_guide.png');
-}
-
-.darkbground2 {
-    background-image: url('dark/blank.png');
-}
-
-.darkboxoffice {
-    background-image: url('dark/box_office.png');
-}
-
-.darkservices {
-    background-image: url('dark/services.png');
-}
-
-.darkinteractive {
-    background-image: url('dark/interactive.png');
 }
 
 body {
