@@ -10,22 +10,22 @@ const playlist = [{
 },
 {
     name: 'primetime',
-    times: [19, 20],
+    times: [20, 21],
     songs: ["https://stream.zeno.fm/yxauxfbcf2zuv"]
 },
 {
     name: 'daytime',
-    times: [12, 13, 14, 15],
+    times: [12, 13, 14, 15, 16, 17],
     songs: ["https://stream.zeno.fm/bwens44bf2zuv"]
 },
 {
     name: 'sunset',
-    times: [16, 17, 18],
+    times: [18, 19],
     songs: ["https://stream.zeno.fm/nge0aca44d0uv"],
 },
 {
     name: 'nightclub',
-    times: [21, 22, 23],
+    times: [22, 23],
     songs: ["https://stream.zeno.fm/vq7vtswbf2zuv"]
 }
 ]
