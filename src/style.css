@@ -786,14 +786,14 @@ li {
 /* Font Families */
 @font-face {
     font-family: 'Zurich';
-    src: url('Zurich Bold Extended.woff') format('woff');
+    src: url('fonts/Zurich Bold Extended.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ZurichTV';
-    src: url('Zurich Bold Condensed.woff') format('woff');
+    src: url('fonts/Zurich Bold Condensed.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -802,12 +802,12 @@ li {
     font-family: 'Helvetica 65 Medium Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Helvetica 65 Medium Regular'), url('Helvetica65Medium_22443.woff') format('woff');
+    src: local('fonts/Helvetica 65 Medium Regular'), url('fonts/Helvetica65Medium_22443.woff') format('woff');
 }
 
 @font-face {
     font-family: 'ZurichBT';
-    src: url('ZurichBT-Bold.woff2') format('woff2'), url('ZurichBT-Bold.woff') format('woff');
+    src: url('fonts/ZurichBT-Bold.woff2') format('woff2'), url('fonts/ZurichBT-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
