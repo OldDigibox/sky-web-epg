@@ -13,29 +13,29 @@
     --sub-colour-hover: #fec200;
     --listnum-colour-hover: rgb(0, 0, 179);
     --font-colour-hover: rgb(0, 0, 179);
-    --background-image-blank: url('https://media.discordapp.net/attachments/649968233553723405/709086018942402631/image1.jpg');
+    --background-image-blank: url("img/blank.jpg");
     --background-image: url("img/tv_guide.png");
 }
 
 /* Backgrounds for pages */
 .bground1 {
-    background-image: url("https://media.discordapp.net/attachments/771452339541770303/771456704096501810/tv_guide.png");
+    background-image: url("img/tv_guide.png");
 }
 
 .bground2 {
-    background-image: url('https://media.discordapp.net/attachments/649968233553723405/709086018942402631/image1.jpg');
+    background-image: url("img/blank.jpg");
 }
 
 .boxoffice {
-    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771456695490052126/box_office.png');
+    background-image: url("img/box_office.png");
 }
 
 .services {
-    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771456703920734268/services.png');
+    background-image: url("img/services.png");
 }
 
 .interactive {
-    background-image: url('https://media.discordapp.net/attachments/771452339541770303/771456702901125190/interactive.png')
+    background-image: url("img/interactive.png")
 }
 
 .blueground {
