@@ -143,6 +143,7 @@ const playlist = [{
 let nowPlaying = null;
 const player = document.getElementById("player"); // Get Audio Element
 player.autoplay = true;
+player.volume = 0.2;
 
 player.addEventListener("ended", function () {
     player.currentTime = 0; // Reset playback position to the beginning
