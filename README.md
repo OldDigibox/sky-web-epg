@@ -12,6 +12,11 @@ be switched off; however, should there be a bug which breaks the
 functionality of the site, it will still be fixed. No new features
 or enhancements will be made.
 
+Originally, SWEPG was archived on Apr 22, 2022, placing
+it in a read-only state, but it will remain in LTS
+(long-term-support) state as the background music
+and images broke in 2023.
+
 # Sky Web EPG License
 ## Copyright © 2024 Old Digibox
 
