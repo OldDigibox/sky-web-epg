@@ -3,12 +3,20 @@ A recreation of the classic EPG on the Sky Digiboxes and legacy Sky+ from 2005-2
 version of the Sky+ EPG, version `5.08.6`.
 ![screenshot](www/Capture.PNG)
 
-## What channel listing is this based on?
-London SD.
+# Time-based background music
+As well as simulate the iconic "EPG Background Audio,"
+(which you can access via SERVICES > SYSTEM SETUP >
+SOUND SETTINGS) we have innovated and put in place
+time-based EPG Music sets!
+1. At 12-6 AM, the 'Early Morning' set plays
+2. At 6 AM-12 PM, the 'Morning' set plays
+3. At 12-6 PM, the 'Daytime' set plays
+4. At 6-8 PM, the 'Sunset' set plays
+5. At 8-10 PM, the 'Primetime' set plays
+6. At 10 PM-12 AM, the 'Nightclub' set plays
 
 # Sky Web EPG is now in "LTS" state
-Old Digibox considers Sky Web EPG to be complete, and therefore PRs will
-be switched off; however, should there be a bug which breaks the 
+Old Digibox considers Sky Web EPG to be complete; however, should there be a bug which breaks the 
 functionality of the site, it will still be fixed. No new features
 or enhancements will be made.
 
