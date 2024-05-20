@@ -204,7 +204,7 @@ function toPage(frompage, topage) {
 }
 
 function playVideo(name) {
-    const file = "vid-" + name + ".html";
+    const file = "www/" + "vid-" + name + ".html";
     window.location.href = file;
 }
 
@@ -223,6 +223,3 @@ function setpixelated(context) {
     context['webkitImageSmoothingEnabled'] = false; /* Safari */
     context['msImageSmoothingEnabled'] = false;     /* IE */
 }
-
-var canvas = document.getElementById('titles')
-setpixelated(canvas.getContext('2d'))
