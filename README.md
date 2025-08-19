@@ -26,7 +26,7 @@ it in a read-only state, but it will remain in LTS
 and images broke in 2023.
 
 # Sky Web EPG License
-## Copyright © 2024 Old Digibox
+## Copyright © 2025 Old Digibox
 
 OldDigibox is in no way affiliated with Sky Group or its subsidiaries.  
 
