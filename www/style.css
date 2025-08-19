@@ -254,6 +254,7 @@ li .tele {
 
 .links a:hover {
     color: white;
+    cursor: pointer;
 }
 
 .tvlinks {
