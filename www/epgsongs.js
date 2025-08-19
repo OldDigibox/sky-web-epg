@@ -3,42 +3,37 @@ const playlist = [{
     times: [0, 1, 2, 3, 4, 5],
     songs:
         [
-            "www/au/earlymorning/track1.mp3",
-            "www/au/earlymorning/track2.mp3",
-            "www/au/earlymorning/track3.mp3",
-            "www/au/earlymorning/track4.mp3",
-            "www/au/earlymorning/track5.mp3",
-            "www/au/earlymorning/track6.mp3",
-            "www/au/earlymorning/track7.mp3",
-            "www/au/earlymorning/track8.mp3",
-            "www/au/earlymorning/track9.mp3",
-            "www/au/earlymorning/track10.mp3",
-            "www/au/earlymorning/track11.mp3",
-            "www/au/earlymorning/track12.mp3",
-            "www/au/earlymorning/track13.mp3",
-            "www/au/earlymorning/track14.mp3"
+            "www/au/f90.mp3",
+            "www/au/g10.mp3",
+            "www/au/g20.mp3",
+            "www/au/a40.mp3",
+            "www/au/g30.mp3",
+            "www/au/d20.mp3",
+            "www/au/e50.mp3",
+            "www/au/a20.mp3",
+            "www/au/d10.mp3",
+            "www/au/f10.mp3",
+            "www/au/f70.mp3",
+            "www/au/a90.mp3",
+            "www/au/b30.mp3",
+            "www/au/f50.mp3"
     ]
 },
 {
     name: 'morning',
     times: [6, 7, 8, 9, 10, 11],
     songs:
-    [
-            "www/au/morning/track1.mp3",
-            "www/au/morning/track2.mp3",
-            "www/au/morning/track3.mp3",
-            "www/au/morning/track4.mp3",
-            "www/au/morning/track5.mp3",
-            "www/au/morning/track6.mp3",
-            "www/au/morning/track7.mp3",
-            "www/au/morning/track8.mp3",
-            "www/au/morning/track9.mp3",
-            "www/au/morning/track10.mp3",
-            "www/au/morning/track11.mp3",
-            "www/au/morning/track12.mp3",
-            "www/au/morning/track13.mp3",
-            "www/au/morning/track14.mp3",
-            "www/au/morning/track15.mp3"
+        [
+            "www/au/b40.mp3",
+            "www/au/c80.mp3",
+            "www/au/c60.mp3",
+            "www/au/a10.mp3",
+            "www/au/e10.mp3",
+            "www/au/e30.mp3",
+            "www/au/j60.mp3",
+            "www/au/c20.mp3",
+            "www/au/d70.mp3",
+            "www/au/"
     ]
 },
 {
