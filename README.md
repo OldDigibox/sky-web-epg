@@ -1,4 +1,4 @@
-# Sky Web EPG | Current Version: **`5.13.1`**
+# Sky Web EPG | Current Version: **`5.13.2`**
 A recreation of the classic EPG on the Sky Digiboxes and legacy Sky+ from 2005-2010. This is based on the latest
 version of the Sky+ EPG, version `5.08.6`.
 ![screenshot](www/Capture.PNG)
